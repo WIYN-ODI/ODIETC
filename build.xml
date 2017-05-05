@@ -1,0 +1,83 @@
+<project name="ODIETC" default="dist" basedir=".">
+    <description>
+        ODI Exposure Time Calculator
+    </description>
+  <!-- set global properties for this build -->
+  <property name="src" location="src"/>
+  <property name="build" location="build"/>
+  <property name="dist"  location="odietc"/>
+
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}"/>
+    <mkdir dir="${build}"/>
+  </target>
+
+
+
+  
+  <target name="compile" depends="init"
+          description="compile the source " >
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac srcdir="${src}" destdir="${build}"
+	   sourcepath="${src}" debug="true" debuglevel="lines">
+      <classpath>
+	<fileset dir="${basedir}/extern">
+	  <include name="**/*.jar"/>
+	</fileset>
+    </classpath>
+    <!-- <compilerarg value="-Xlint:unchecked"/> -->
+    
+    </javac>
+    <copy todir="${build}/resources">
+      <fileset dir="${src}/resources"/>
+      </copy>
+  </target>
+  
+
+  <target name="javadoc" >
+    <mkdir dir="APIdoc"/>
+    <javadoc  packagenames="org.wiyn.odi.otalib"
+	     sourcepath="${src}"
+	     destdir="APIdoc">
+    </javadoc>
+  </target>
+  
+
+
+  <target name="dist" depends="compile"
+          description="generate the distribution" >
+    <!-- Create the distribution directory -->
+    <mkdir dir="${dist}/lib"/>
+
+    <!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -->
+   
+    <jar jarfile="${dist}/lib/odietc-exp.jar" basedir="${build}" 
+	 manifest="${src}/manifest.stub"/>
+
+    
+    <!-- Now copy all external libs and web pages to that directory -->
+    <copy todir="${dist}/lib">
+      <fileset dir="extern">
+	<include name="**/*.jar"/>
+	<include name="**/*.jnlp"/>
+      </fileset>
+    </copy>
+
+  
+    </target>
+
+
+
+
+  <target name="clean"
+        description="clean up" >
+    <!-- Delete the ${build} and ${dist} directory trees -->
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+    <delete dir="APIdoc"/>
+  </target>
+</project>

@@ -1,0 +1,140 @@
+
+<br />
+<center><a
+	href="http://www.wiyn.org/quota/Software/odietc/lib/odietc.jnlp"> <Large>
+Click here to start the ODI Exposure Time Calculator </Large> </a></center>
+<br />
+<br />
+
+<h3>System Requirements</h3>
+
+Java 1.5 (or newer) and Java Web Start are required to run the Exposure
+Time Calculator (ETC). A relatively fast machine is helpful because a
+complete model of the instrument will be calculated. Any system
+supporting Java and Java Web start can be used to run this software.
+
+<p /><bf> Warning: This software is an alpha release and results
+have not yet been verified. </bf>
+<h2>Introduction</h2>
+The ODI ETC is an end-to-end simulation of the ODI system. It contains
+wavelength-dependent throughput models of all optical components of ODI
+and the WIYN telescope, and the quantum efficiency prediction of the
+detector. Based on flux-normalized input spectra, the ETC will calculate
+the photon flux received by a detector and calculate a signal-to-noise
+ratio for an exposure of a point source through aperture photometry. The
+process is as follows:
+
+<ul>
+	<li>Select your input spectrum and flux normalisation.
+	<li>Set up an exposure and check the signal to noise.
+	<li>Iterate until satisfied with the result.
+</ul>
+
+The ETC is divided into four major panels which are accessible through
+tabs:
+
+
+<h3>Spectrum Selection Tab</h3>
+
+You can choose from a variety of input spectra in the ETC. Check the Use
+button of a spectrum type and choose an appropriate normalization. Note
+that the normalization in photometric systems is currently done at one
+single wavelength; an absorption line falling onto the reference
+wavelength could fool you! Note that if you select more than one
+spectrum, all selected spectra will be added in the input. A
+user-supplied spectrum can be specified, as long as it only contains two
+columns of numbers (wavelength in Angstroem and flux in Fnu), and no
+header or footer information!
+
+
+<p align="center"><img src="images/InputSelectPanel.png" /></p>
+
+
+<h3>Exposure Tab</h3>
+
+This panel controls the exposure parameters. Enter the exposure time,
+number of exposures, binning, and the readout mode. Standard readout
+mode will be the fast 10 e- readout noise mode, but we plan to implement
+a slow, low noise mode. However, its characteristics are pending. You
+can enter the filter of your choice. For engineering purposes, we
+included the SDSS system throughput curves for comparison with ODI. To
+use them, you must click on "Ignore Telescope Throughput."
+
+<p />Press the Expose button to simulate the exposure. The results will
+be displayed in the lower area of the pane. First, you will see
+parameters such as sky level per pixel element (which can be two
+physical pixels large in binning mode). Then the total number of
+detected photons from the object is shown, and how much it peaks above
+the background level.
+<h4>Signal to Noise</h4>
+
+In the table at the bottom of the pane, the signal-to-noise of the
+exposures is displayed for a variety of apertures. Column headers show
+the used aperture radius in units of the current seeing FWHM. Depending
+on the luminosity of your object, the optimum aperture varies and is
+smaller for faint sources since the background noise is dominating
+earlier. The table first shows the signal to noise, and then the
+expected photometric error, which relates to the SNR as error = 0.92 /
+SNR. The text area is currently displaying the signal to noise of the
+smallest aperture. At some point it will show the best SNR at the most
+efficient aperture.
+
+
+<p align="center"><img src="images/ExposePanel.png" /></p>
+
+
+
+<h3>Graph Tab</h3>
+
+
+The display panel shows the selected input spectrum and sky spectrum,
+together with the ODI and telecope system throughput curve. Note: the
+display is only updated when you press the Display button at the right.
+When changing relevant input parameters (e.g., source spectrum, moon
+phase, filer), please manually press the display button to update the
+graph.
+
+<p />Automatic scaling is not yet supported; however, the graph can be
+manually rescaled with your mouse: Left-click anywhere in the graph and
+drag the mouse to the upper left, and release it. The graph will be
+rescaled. You can zoom in by dragging the mouse from the upper left to
+the lower right. Right-clicking opens a menu that allows you to save the
+image.
+<p align="center"><img src="images/SpectrumplotAll.png" /></p>
+
+<h3>Logging Tab</h3>
+
+The logging tab shows additional information about the flux
+normalization and photometry process. Here you can check the number of
+each calculation step, or access intermediate results if you need them.
+
+<p align="center"><img src="images/LoggingPanel.png"
+	alt="Screen shot of logging panel" /></p>
+
+<h2>Limitations</h2>
+
+<ul>
+	<li>The software has not yet been verified with real on-sky
+	observations!</li>
+	<li>The throughput and quantum efficiency tables are based on
+	predictions, not actual measurements!</li>
+	<li>The exposure model can only handle point sources at this time.</li>
+
+</ul>
+
+
+
+<h2>Credit</h2>
+<ul>
+	<li>This software is based on the SALT Exposure time calculator,
+	which was started by Jeff Percival (UW Madison), and further developed
+	by Christian Hettlage (SAAO).
+	<li>Stellar input spectra use the <a
+		href="http://www.stsci.edu/hst/observatory/cdbs/k93models.html">
+	1993 Kurucz stellar atmospheres atlas </a>.
+	<li>
+</ul>
+
+
+
+

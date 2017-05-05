@@ -1,0 +1,4 @@
+export DEV_ROOT=`pwd`
+export CLASSPATH="${DEV_ROOT}/build:${DEV_ROOT}/extern/activation.jar:${DEV_ROOT}/extern/jaxb-impl.jar:${DEV_ROOT}/extern/jsr173_1.0_api.jar:${DEV_ROOT}/extern/commons-codec-1.3.jar:${DEV_ROOT}/extern/jcommon-1.0.5.jar:${DEV_ROOT}/extern/pipt_common-0.3.jar:${DEV_ROOT}/extern/jaxb-api.jar:${DEV_ROOT}/extern/jfreechart-1.0.2.jar"
+
+alias odietc="java za.ac.salt.pipt.rss.view.RSSSimulatorTool"

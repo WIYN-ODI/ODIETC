@@ -1,0 +1,1945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pipt="http://www.salt.ac.za"
+  elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <!--
+    Change History:
+    
+    v0.2
+    * Demoted RepCount into PFIS Procedure.
+    * Added WaveLengthCount and FocusPatternCount to FocusPattern
+    
+    v0.3
+    * Slitmask now contains phase 1 and 2 groups. The phase 1 group contains a slitmask
+    type and a slit width. The phase 2 group contains a slitmask id and a slitmask file.
+    * WPConfig changed to PolConfig as it includes the beamsplitter configuration.
+    * PFIS FilterId's have been enumerated (list drawn from PFIS PIPT).
+    * "linear-hi" added to PolPatternName.
+    * EtPattern now contains phase 1 and 2 groups. The phase 1 groups contains a wavelength
+    mid value and a wavelength count value. The phase 2 group contains an array of
+    wavelengths.
+    * Standardised all elements which need to contain both a value and a unit.
+    * Added support for pellicle setups.
+    * Instead of just having Blocks and ObsConfigs, we now have Blocks which can only
+    contain SubBlocks which can only contain SubSubBlocks which can only contain
+    ObsConfigs. These 4 levels will always exist. Nesting is achieved not by varying
+    the depth of blocks but by adjusting the 'Count' value of each level. This simplification
+    was necessary for database constraints.
+    * Added a SequenceNumber to all of the instrument configurations.
+    
+    v0.4
+    * Added an ExposureTime to all Block levels viz. Block, SubBlock, SubSubBlock,
+    ObsConfig and instrument configurations (SALTICAM, PFIS, FIF).
+    * Removed the SequenceNumbers as Anne Charles is going to take care of this in
+    the database schema.
+    
+    v0.5
+    * Turned the SalticamFilterArray group into a complex type.
+    * Changed all occurences of xs:positiveInteger into xs:unsignedInt with the constraining facet minInclusive equal to 1.
+    * Changed all occurences of xs:nonNegativeInteger into xs:unsignedInt.
+    * Introduced a simple type xs:Iterations for Iterations elements.
+    * Changed the type of the Comments child of the SeeingConstraint element into xs:string
+    * Turned the content of the File element into a Value and a Units element (rather than a simple float)
+    * Turned the content of the Wavelength element into a Value and a Units element (rather than a simple float)
+    * Corrected the version number.
+    * Enforced uniqueness of the Email element values.
+    * Replaced ID/IDREF pairs by key/keyref pairs.
+    * Replaced ExposureTime by ObsTime in ObsConfig, Block, SubBlock and SubSubBlock
+    * Introduced a PellicleConfig type.
+    * Replaced the type of the ObsConfig element in the SubSubBlock element by a new type ObsConfigRef, as the ObsConfig element is a reference to an ObsConfig element defined within the ObservationConfigurations element.
+    * Analogously, replaced the type of the PayloadConfig element in the ObsConfig element by the new type PayloadConfigRef.
+    * Introduced a pattern to restrict the lexical space of the TargetType type.
+    * Added attributes for indicating that an element is allowed for a particular proposal phase only.
+  
+    V0.51
+    * Modified RssDetector complexType to reflect recent changes in the Labview telescope interface
+    * Added Window element to RssDetector
+    * Changed complexContent of RssDetector from All to Sequence to allow multiple windows
+    * Added SalticamDetector element for Phase 2 SALTICAM proposal
+  
+    V0.511
+    * Added SalticamDetector element to Salticam complexType and removed PreBin elements
+    * Brought back PDET FrameSize under the guise of a RssDetector window element called PDETWindow
+    * New UseWindow element for RssDetector
+    * Added Nwindows element to SalticamDetector
+    * Replaced all occurences of 'Pfis' with 'Rss' (apart from this version history)
+   -->
+
+  <!-- +++++++++++ -:Proposal:- +++++++++++ -->
+  <xs:element name="Proposal">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:documentation> The root node of a SALT proposal. </xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:element name="Title" type="xs:string">
+          <xs:annotation>
+            <xs:documentation> The title of the proposal. </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Abstract" type="xs:string">
+          <xs:annotation>
+            <xs:documentation> A text based version of the abstract. </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ScientificJustification" type="xs:base64Binary">
+          <xs:annotation>
+            <xs:documentation> A base 64 encoded binary of the PDF version of the scientific
+              justification. </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Phase" default="1">
+          <xs:annotation>
+            <xs:documentation> 1 = Request for time. 2 = Detailed telescope configuration.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:unsignedInt">
+              <xs:minInclusive value="1"/>
+              <xs:maxInclusive value="2"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="Semester" default="1">
+          <xs:annotation>
+            <xs:documentation> 1 = 1 March to 30 September. 2 = 1 October to 28 February
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:unsignedInt">
+              <xs:minInclusive value="1"/>
+              <xs:maxInclusive value="2"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="Year" default="2005">
+          <xs:annotation>
+            <xs:documentation> The year corresponding with the beginning of the chosen semester.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:unsignedInt">
+              <xs:minInclusive value="2005"/>
+              <xs:maxInclusive value="2100"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ActOnAlert" type="xs:boolean" default="false">
+          <xs:annotation>
+            <xs:documentation> For targets of opportunity. Act on alert authorisation.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="TotalRequiredTime" type="ExposureTime"/>
+        <xs:element name="Partners">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Partner" type="Partner" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation> The SALT partners associated with this proposal.
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Targets">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Target" type="Target" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation> The targets associated with this proposal. </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PayloadConfigurations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PayloadConfig" type="PayloadConfig" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ObservationConfigurations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ObsConfig" type="ObsConfig" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Blocks">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Block" type="Block" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <!-- The current version of the schema. -->
+      <xs:attribute name="Version" type="xs:float" use="required" fixed="0.5"/>
+      <xs:attribute name="PrincipalInvestigator" type="xs:string"/>
+      <xs:attribute name="PrincipalContact" type="xs:string"/>
+    </xs:complexType>
+    <!--    <xs:unique name="Email">
+      <xs:selector xpath=".//Investigator" />
+      <xs:field xpath="Email" />
+      </xs:unique>
+      <xs:key name="InvestigatorID">
+      <xs:selector xpath=".//Investigator" />
+      <xs:field xpath="@id" />
+      </xs:key>
+      <xs:key name="TargetID">
+      <xs:selector xpath=".//Target" />
+      <xs:field xpath="@id" />
+      </xs:key>
+      <xs:keyref name="PrincipalInvestigator" refer="InvestigatorID">
+      <xs:selector xpath="." />
+      <xs:field xpath="@PrincipalInvestigator" />
+      </xs:keyref>
+      <xs:keyref name="PrincipalContact" refer="InvestigatorID">
+      <xs:selector xpath="." />
+      <xs:field xpath="@PrincipalContact" />
+      </xs:keyref>
+      <xs:keyref name="Target" refer="TargetID">
+      <xs:selector xpath=".//ObsConfig" />
+      <xs:field xpath="@Target" />
+      </xs:keyref> -->
+  </xs:element>
+  <!-- +++++++++++ -:Partner:- +++++++++++ -->
+  <xs:complexType name="Partner">
+    <xs:sequence>
+      <xs:element name="Name" default="NRF">
+        <xs:annotation>
+          <xs:documentation> The name of the SALT partner. </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="NRF"/>
+            <xs:enumeration value="CAMK"/>
+            <xs:enumeration value="HETB"/>
+            <xs:enumeration value="Rutgers"/>
+            <xs:enumeration value="GU"/>
+            <xs:enumeration value="UW"/>
+            <xs:enumeration value="CMU"/>
+            <xs:enumeration value="UC"/>
+            <xs:enumeration value="UKSC"/>
+            <xs:enumeration value="UNC CH"/>
+            <xs:enumeration value="Dartmouth"/>
+            <xs:enumeration value="Other"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Institute" type="Institute" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation> The institutes associated with this SALT partner. </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="TimeDistribution">
+        <xs:annotation>
+          <xs:documentation> The percentage of the total required time to be charged to this SALT
+            partner. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="Value" default="1">
+              <xs:simpleType>
+                <xs:restriction base="xs:unsignedInt">
+                  <xs:minInclusive value="1"/>
+                  <xs:maxInclusive value="100"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="Units" type="xs:string" fixed="%"/>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- +++++++++++ -:Institute:- +++++++++++ -->
+  <xs:complexType name="Institute">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string">
+        <xs:annotation>
+          <xs:documentation> The name of the institute. </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Address" type="Address">
+        <xs:annotation>
+          <xs:documentation> The physical address of the institute. </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="URL" type="xs:anyURI" default="http://" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation> The website address of the institute. </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Investigator" type="Investigator" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation> The astronomical investigators associated with this proposal.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- +++++++++++ -:Address:- +++++++++++ -->
+  <xs:complexType name="Address">
+    <xs:annotation>
+      <xs:documentation> A physical address. </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Street" type="xs:string" maxOccurs="10"/>
+      <xs:element name="POBox" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="BoxNumber" type="xs:string"/>
+            <xs:element name="PostalCode" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PostalCode" type="xs:string"/>
+      <xs:element name="City" type="xs:string"/>
+      <xs:element name="State" type="xs:string"/>
+      <xs:element name="Country" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- +++++++++++ -:Investigator:- +++++++++++ -->
+  <xs:complexType name="Investigator">
+    <xs:all>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="Surname" type="xs:string"/>
+      <xs:element name="Email" type="xs:anyURI"/>
+      <xs:element name="Phone" type="xs:string"/>
+      <xs:element name="Fax" type="xs:string"/>
+    </xs:all>
+  </xs:complexType>
+  <!-- +++++++++++ -:Target:- +++++++++++ -->
+  <xs:complexType name="Target">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="RightAscension" type="RightAscension"/>
+      <xs:element name="Declination" type="Declination"/>
+      <xs:element name="TargetType" type="TargetType" default="Unknown"/>
+      <xs:element name="VMagnitudeRange">
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="Minimum" default="0.0">
+              <xs:simpleType>
+                <xs:restriction base="xs:float">
+                  <xs:minInclusive value="0.0"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="Maximum" default="0.0">
+              <xs:simpleType>
+                <xs:restriction base="xs:float">
+                  <xs:minInclusive value="0.0"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Equinox" type="xs:float" default="2000"/>
+      <xs:element name="Ephemeris" type="Ephemeris" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:complexType>
+  <!-- +++++++++++ -:TargetRef:- +++++++++++ -->
+  <xs:complexType name="TargetRef">
+    <xs:annotation>
+      <xs:documentation> A reference to a Target element. </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="ref" type="xs:string" use="required"/>
+  </xs:complexType>
+  <!-- +++++++++++ -:TargetTypePattern:- +++++++++++ -->
+  <xs:simpleType name="TargetTypePattern">
+    <xs:annotation>
+      <xs:documentation> The pattern which each TargetType element value must match.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="((Calibration|Galaxy|Misc|Nebula|Solar System|Star|Sun):.+)|Unknown)"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- +++++++++++ -:TargetType:- +++++++++++ -->
+  <xs:simpleType name="TargetType">
+    <xs:annotation>
+      <xs:documentation> Rough classification of a target for database query purposes (e.g. "Show me
+        all the data from Seyfert galaxies in the constellation Cygnus"). </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="TargetTypePattern">
+      <xs:enumeration value="Calibration: Astrometric Standard"/>
+      <xs:enumeration value="Calibration: Dome Flat"/>
+      <xs:enumeration value="Calibration: Guide Star"/>
+      <xs:enumeration value="Calibration: Photometric Standard"/>
+      <xs:enumeration value="Calibration: Polarimetric Standard"/>
+      <xs:enumeration value="Calibration: Radial Velocity Standard"/>
+      <xs:enumeration value="Calibration: Sky Flat"/>
+      <xs:enumeration value="Calibration: Spectropolarimetric Standard"/>
+      <xs:enumeration value="Calibration: Spectroscopic Standard"/>
+      <xs:enumeration value="Galaxy: Active Galactic Nucleus"/>
+      <xs:enumeration value="Galaxy: Black Hole"/>
+      <xs:enumeration value="Galaxy: Blazar"/>
+      <xs:enumeration value="Galaxy: Dwarf"/>
+      <xs:enumeration value="Galaxy: Elliptical"/>
+      <xs:enumeration value="Galaxy: Galaxy"/>
+      <xs:enumeration value="Galaxy: Galaxy Cluster"/>
+      <xs:enumeration value="Galaxy: Gravitational Lens"/>
+      <xs:enumeration value="Galaxy: Interacting"/>
+      <xs:enumeration value="Galaxy: Irregular"/>
+      <xs:enumeration value="Galaxy: Seyfert"/>
+      <xs:enumeration value="Galaxy: Spiral"/>
+      <xs:enumeration value="Galaxy: Starburst"/>
+      <xs:enumeration value="Galaxy: Supernova"/>
+      <xs:enumeration value="Galaxy: Quasar"/>
+      <xs:enumeration value="Misc: Constellation"/>
+      <xs:enumeration value="Misc: Optical Flash"/>
+      <xs:enumeration value="Misc: Other"/>
+      <xs:enumeration value="Misc: Sky"/>
+      <xs:enumeration value="Misc: Star Field"/>
+      <xs:enumeration value="Nebula: Bipolar"/>
+      <xs:enumeration value="Nebula: Dark Cloud"/>
+      <xs:enumeration value="Nebula: Gaseous"/>
+      <xs:enumeration value="Nebula: Outflow or Jet"/>
+      <xs:enumeration value="Nebula: Reflection"/>
+      <xs:enumeration value="Nebula: Supernova Remnant"/>
+      <xs:enumeration value="Solar System: Asteroid"/>
+      <xs:enumeration value="Solar System: Comet"/>
+      <xs:enumeration value="Solar System: Earth"/>
+      <xs:enumeration value="Solar System: Kuiper Belt Object"/>
+      <xs:enumeration value="Solar System: Jupiter"/>
+      <xs:enumeration value="Solar System: Mars"/>
+      <xs:enumeration value="Solar System: Mercury"/>
+      <xs:enumeration value="Solar System: Moon"/>
+      <xs:enumeration value="Solar System: Neptune"/>
+      <xs:enumeration value="Solar System: Planetary Moon"/>
+      <xs:enumeration value="Solar System: Planetary Ring"/>
+      <xs:enumeration value="Solar System: Pluto"/>
+      <xs:enumeration value="Solar System: Saturn"/>
+      <xs:enumeration value="Solar System: Uranus"/>
+      <xs:enumeration value="Solar System: Venus"/>
+      <xs:enumeration value="Star: Binary or Multiple"/>
+      <xs:enumeration value="Star: Black Hole"/>
+      <xs:enumeration value="Star: Brown Dwarf"/>
+      <xs:enumeration value="Star: Cataclysmic Variable"/>
+      <xs:enumeration value="Star: Classical Nova"/>
+      <xs:enumeration value="Star: Cepheid Variable"/>
+      <xs:enumeration value="Star: Eclipsing Binary"/>
+      <xs:enumeration value="Star: Gamma Ray Burst"/>
+      <xs:enumeration value="Star: Globular Cluster"/>
+      <xs:enumeration value="Star: Irregular Variable"/>
+      <xs:enumeration value="Star: Microlensing Event"/>
+      <xs:enumeration value="Star: Nearby"/>
+      <xs:enumeration value="Star: Neutron"/>
+      <xs:enumeration value="Star: Open Cluster"/>
+      <xs:enumeration value="Star: Pre-main Sequence"/>
+      <xs:enumeration value="Star: Proper Motion"/>
+      <xs:enumeration value="Star: Protostar"/>
+      <xs:enumeration value="Star: Pulsar"/>
+      <xs:enumeration value="Star: Star"/>
+      <xs:enumeration value="Star: Star Cluster"/>
+      <xs:enumeration value="Star: Supernova"/>
+      <xs:enumeration value="Star: Variable"/>
+      <xs:enumeration value="Star: White Dwarf"/>
+      <xs:enumeration value="Star: Wolf Rayet"/>
+      <xs:enumeration value="Sun: Chromosphere"/>
+      <xs:enumeration value="Sun: Corona"/>
+      <xs:enumeration value="Sun: Sun"/>
+      <xs:enumeration value="Sun: Sunspot"/>
+      <xs:enumeration value="Unknown"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- +++++++++++ -:RightAscension:- +++++++++++ -->
+  <xs:complexType name="RightAscension">
+    <xs:annotation>
+      <xs:documentation> Equatorial Right Ascension of &lt;Target&gt;, measured in hours,
+        minutes, and seconds. An optional proper motion may be included. </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Hours" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedInt">
+            <xs:maxInclusive value="23"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Minutes" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedInt">
+            <xs:maxInclusive value="59"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Seconds" default="0.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:minInclusive value="0.0"/>
+            <xs:maxInclusive value="59.999"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ProperMotion" type="ProperMotion" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- +++++++++++ -:Declination:- +++++++++++ -->
+  <xs:complexType name="Declination">
+    <xs:annotation>
+      <xs:documentation> Container for the equatorial celestial coordinate of a Target in degrees,
+        arcminutes and (decimal) arcseconds. An optional ProperMotion element may be provided.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Sign" default="+">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="+"/>
+            <xs:enumeration value="-"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Degrees" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedInt">
+            <xs:maxInclusive value="180"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Arcminutes" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedInt">
+            <xs:maxInclusive value="59"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Arcseconds" default="0.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:minInclusive value="0.0"/>
+            <xs:maxInclusive value="59.999"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ProperMotion" type="ProperMotion" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- +++++++++++ -:ProperMotion:- +++++++++++ -->
+  <xs:complexType name="ProperMotion">
+    <xs:all>
+      <xs:element name="Value" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:minInclusive value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Units" type="xs:string" fixed="arcseconds/year"/>
+    </xs:all>
+  </xs:complexType>
+  <!-- +++++++++++ -:Rss:- +++++++++++ -->
+  <xs:complexType name="Rss">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="Iterations" type="Iterations" default="1"/>
+      <xs:element name="RssConfig" type="RssConfig">
+        <xs:annotation>
+          <xs:documentation> This describes the mechanical configuration of the intstrument
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="RssProcedure" type="RssProcedure">
+        <xs:annotation>
+          <xs:documentation> This specifies the way the instrument is operated during an exposure
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="RssDetector" type="RssDetector">
+        <xs:annotation>
+          <xs:documentation> This specifies the exposure for the detector controller
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- +++++++++++ -:RSS Configuration:- +++++++++++ -->
+  <xs:complexType name="RssConfig">
+    <xs:annotation>
+      <xs:documentation>An RSS configuration.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element name="Config" default="Imaging">
+        <xs:annotation>
+          <xs:documentation> This specifies one of the three fundamental configurations
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Imaging"/>
+            <xs:enumeration value="Spectroscopy"/>
+            <xs:enumeration value="Fabry-Perot"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="SlitMask">
+        <xs:annotation>
+          <xs:documentation> Phase 1 and phase 2 slitmask info. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:choice>
+            <xs:group ref="SlitMaskPhase1"/>
+            <xs:group ref="SlitMaskPhase2"/>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PolConfig" default="Open">
+        <xs:annotation>
+          <xs:documentation> This specifies which of the polarimetric optics are in the beam. open -
+            no polarimetry. linear - just the half wave plate. linear_parallel - half wave plate
+            with the beam splitter rotated by 90°. stokes - half wave and quarter wave plates.
+            stokes_parallel - half wave and quarter wave plates with the beam splitter rotated by
+            90°. </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Open"/>
+            <xs:enumeration value="Linear"/>
+            <xs:enumeration value="Linear Parallel"/>
+            <xs:enumeration value="Stokes"/>
+            <xs:enumeration value="Stokes Parallel"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="FocusPosition">
+        <xs:annotation>
+          <xs:documentation> The focus position in microns. This is referred to the home indicator
+            of the focus actuator in the camera. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="Value" default="1000">
+              <xs:simpleType>
+                <xs:restriction base="xs:float">
+                  <xs:minInclusive value="0"/>
+                  <xs:maxInclusive value="1600"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="Units" type="xs:string" fixed="microns"/>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EtConfig" default="tf">
+        <xs:annotation>
+          <xs:documentation> There are four ways to insert the two etalons </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="tf"/>
+            <xs:enumeration value="lr"/>
+            <xs:enumeration value="mr"/>
+            <xs:enumeration value="hr"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Grating" default="open">
+        <xs:annotation>
+          <xs:documentation> The bar code of the desired grating. </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="open"/>
+            <xs:enumeration value="pg0300"/>
+            <xs:enumeration value="pg0900"/>
+            <xs:enumeration value="pg1300"/>
+            <xs:enumeration value="pg1800"/>
+            <xs:enumeration value="pg2300"/>
+            <xs:enumeration value="pg3000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="GratingAngle">
+        <xs:annotation>
+          <xs:documentation> The grating can be rotated to any angle between 0 and 100 degrees. The
+            angular choice is quantized only by the resolution of the stepper motor.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="Value" default="0">
+              <xs:simpleType>
+                <xs:restriction base="xs:float">
+                  <xs:minInclusive value="0"/>
+                  <xs:maxInclusive value="100"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="Units" type="xs:string" fixed="degrees"/>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FilterId" default="pc00000">
+        <xs:annotation>
+          <xs:documentation> The bar code of the desired filter. Defaults to the clear filter
+            (pc00000). </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <!-- The clear filter -->
+            <xs:enumeration value="pc00000"/>
+            <!-- The schott WG-320 filter -->
+            <xs:enumeration value="pc03200"/>
+            <!-- The hoya UV-34 filter -->
+            <xs:enumeration value="pc03400"/>
+            <!-- The schott GG-385 filter -->
+            <xs:enumeration value="pc03850"/>
+            <!-- The hoya Y-46 filter -->
+            <xs:enumeration value="pc04600"/>
+            <!-- The 4349 (79) filter -->
+            <xs:enumeration value="pi04349"/>
+            <!-- The 4412 (92) filter -->
+            <xs:enumeration value="pi04412"/>
+            <!-- The 4478 (85) filter -->
+            <xs:enumeration value="pi04478"/>
+            <!-- The 4530 (90) filter -->
+            <xs:enumeration value="pi04530"/>
+            <!-- The 4600 (95) filter -->
+            <xs:enumeration value="pi04600"/>
+            <!-- The 4670 (100) filter -->
+            <xs:enumeration value="pi04670"/>
+            <!-- The 4760 (111) filter -->
+            <xs:enumeration value="pi04760"/>
+            <!-- The 4820 (105) filter -->
+            <xs:enumeration value="pi04820"/>
+            <!-- The 4912 (105) filter -->
+            <xs:enumeration value="pi04912"/>
+            <!-- The 4991 (108) filter -->
+            <xs:enumeration value="pi04991"/>
+            <!-- The 5072 (110) filter -->
+            <xs:enumeration value="pi05072"/>
+            <!-- The 5152 (109) filter -->
+            <xs:enumeration value="pi05152"/>
+            <!-- The 5237 (119) filter -->
+            <xs:enumeration value="pi05237"/>
+            <!-- The 5325 (125) filter -->
+            <xs:enumeration value="pi05325"/>
+            <!-- The 5420 (130) filter -->
+            <xs:enumeration value="pi05420"/>
+            <!-- The 5520 (135) filter -->
+            <xs:enumeration value="pi05520"/>
+            <!-- The 5632 (137) filter -->
+            <xs:enumeration value="pi05632"/>
+            <!-- The 5731 (134) filter -->
+            <xs:enumeration value="pi05731"/>
+            <!-- The 5834 (143) filter -->
+            <xs:enumeration value="pi05834"/>
+            <!-- The 5946 (164) filter -->
+            <xs:enumeration value="pi05946"/>
+            <!-- The 6062 (149) filter -->
+            <xs:enumeration value="pi06062"/>
+            <!-- The 6179 (169) filter -->
+            <xs:enumeration value="pi06179"/>
+            <!-- The 6300 (158) filter -->
+            <xs:enumeration value="pi06300"/>
+            <!-- The 6418 (162) filter -->
+            <xs:enumeration value="pi06418"/>
+            <!-- The 6536 (156) filter -->
+            <xs:enumeration value="pi06536"/>
+            <!-- The 6647 (149) filter -->
+            <xs:enumeration value="pi06647"/>
+            <!-- The 6765 (168) filter -->
+            <xs:enumeration value="pi06765"/>
+            <!-- The 6894 (182) filter -->
+            <xs:enumeration value="pi06894"/>
+            <!-- The 7021 (162) filter -->
+            <xs:enumeration value="pi07021"/>
+            <!-- The 7131 (140) filter -->
+            <xs:enumeration value="pi07131"/>
+            <!-- The 7253 (184) filter -->
+            <xs:enumeration value="pi07253"/>
+            <!-- The 7400 (218) filter -->
+            <xs:enumeration value="pi07400"/>
+            <!-- The 7556 (201) filter -->
+            <xs:enumeration value="pi07556"/>
+            <!-- The 7692 (169) filter -->
+            <xs:enumeration value="pi07692"/>
+            <!-- The 7832 (208) filter -->
+            <xs:enumeration value="pi07832"/>
+            <!-- The 7999 (249) filter -->
+            <xs:enumeration value="pi07999"/>
+            <!-- The 8175 (225) filter -->
+            <xs:enumeration value="pi08175"/>
+            <!-- The 8350 (245) filter -->
+            <xs:enumeration value="pi08350"/>
+            <!-- The 8535 (260) filter -->
+            <xs:enumeration value="pi08535"/>
+            <!-- The 8730 (275) filter -->
+            <xs:enumeration value="pi08730"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ArtStation">
+        <xs:annotation>
+          <xs:documentation> There are 132 detented locations. The enumerated values consists of two
+            integers. The first integer represents the station number. The second gives the camera
+            angle in hundredths of a degree. </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="0_0"/>
+            <xs:enumeration value="1_1.75"/>
+            <xs:enumeration value="2_2.50"/>
+            <xs:enumeration value="3_3.25"/>
+            <xs:enumeration value="4_4.00"/>
+            <xs:enumeration value="5_4.75"/>
+            <xs:enumeration value="6_5.50"/>
+            <xs:enumeration value="7_6.25"/>
+            <xs:enumeration value="8_7.00"/>
+            <xs:enumeration value="9_7.75"/>
+            <xs:enumeration value="10_8.50"/>
+            <xs:enumeration value="11_9.25"/>
+            <xs:enumeration value="12_10.00"/>
+            <xs:enumeration value="13_10.75"/>
+            <xs:enumeration value="14_11.50"/>
+            <xs:enumeration value="15_12.25"/>
+            <xs:enumeration value="16_13.00"/>
+            <xs:enumeration value="17_13.75"/>
+            <xs:enumeration value="18_14.50"/>
+            <xs:enumeration value="19_15.25"/>
+            <xs:enumeration value="20_16.00"/>
+            <xs:enumeration value="21_16.75"/>
+            <xs:enumeration value="22_17.50"/>
+            <xs:enumeration value="23_18.25"/>
+            <xs:enumeration value="24_19.00"/>
+            <xs:enumeration value="25_19.75"/>
+            <xs:enumeration value="26_20.50"/>
+            <xs:enumeration value="27_21.25"/>
+            <xs:enumeration value="28_22.00"/>
+            <xs:enumeration value="29_22.75"/>
+            <xs:enumeration value="30_23.50"/>
+            <xs:enumeration value="31_24.25"/>
+            <xs:enumeration value="32_25.00"/>
+            <xs:enumeration value="33_25.75"/>
+            <xs:enumeration value="34_26.50"/>
+            <xs:enumeration value="35_27.25"/>
+            <xs:enumeration value="36_28.00"/>
+            <xs:enumeration value="37_28.75"/>
+            <xs:enumeration value="38_29.50"/>
+            <xs:enumeration value="39_30.25"/>
+            <xs:enumeration value="40_31.00"/>
+            <xs:enumeration value="41_31.75"/>
+            <xs:enumeration value="42_32.50"/>
+            <xs:enumeration value="43_33.25"/>
+            <xs:enumeration value="44_34.00"/>
+            <xs:enumeration value="45_34.75"/>
+            <xs:enumeration value="46_35.50"/>
+            <xs:enumeration value="47_36.25"/>
+            <xs:enumeration value="48_37.00"/>
+            <xs:enumeration value="49_37.75"/>
+            <xs:enumeration value="50_38.50"/>
+            <xs:enumeration value="51_39.25"/>
+            <xs:enumeration value="52_40.00"/>
+            <xs:enumeration value="53_40.75"/>
+            <xs:enumeration value="54_41.50"/>
+            <xs:enumeration value="55_42.25"/>
+            <xs:enumeration value="56_43.00"/>
+            <xs:enumeration value="57_43.75"/>
+            <xs:enumeration value="58_44.50"/>
+            <xs:enumeration value="59_45.25"/>
+            <xs:enumeration value="60_46.00"/>
+            <xs:enumeration value="61_46.75"/>
+            <xs:enumeration value="62_47.50"/>
+            <xs:enumeration value="63_48.25"/>
+            <xs:enumeration value="64_49.00"/>
+            <xs:enumeration value="65_49.75"/>
+            <xs:enumeration value="66_50.50"/>
+            <xs:enumeration value="67_51.25"/>
+            <xs:enumeration value="68_52.00"/>
+            <xs:enumeration value="69_52.75"/>
+            <xs:enumeration value="70_53.50"/>
+            <xs:enumeration value="71_54.25"/>
+            <xs:enumeration value="72_55.00"/>
+            <xs:enumeration value="73_55.75"/>
+            <xs:enumeration value="74_56.50"/>
+            <xs:enumeration value="75_57.25"/>
+            <xs:enumeration value="76_58.00"/>
+            <xs:enumeration value="77_58.75"/>
+            <xs:enumeration value="78_59.50"/>
+            <xs:enumeration value="79_60.25"/>
+            <xs:enumeration value="80_61.00"/>
+            <xs:enumeration value="81_61.75"/>
+            <xs:enumeration value="82_62.50"/>
+            <xs:enumeration value="83_63.25"/>
+            <xs:enumeration value="84_64.00"/>
+            <xs:enumeration value="85_64.75"/>
+            <xs:enumeration value="86_65.50"/>
+            <xs:enumeration value="87_66.25"/>
+            <xs:enumeration value="88_67.00"/>
+            <xs:enumeration value="89_67.75"/>
+            <xs:enumeration value="90_68.50"/>
+            <xs:enumeration value="91_69.25"/>
+            <xs:enumeration value="92_70.00"/>
+            <xs:enumeration value="93_70.75"/>
+            <xs:enumeration value="94_71.50"/>
+            <xs:enumeration value="95_72.25"/>
+            <xs:enumeration value="96_73.00"/>
+            <xs:enumeration value="97_73.75"/>
+            <xs:enumeration value="98_74.50"/>
+            <xs:enumeration value="99_75.25"/>
+            <xs:enumeration value="100_76.00"/>
+            <xs:enumeration value="101_76.75"/>
+            <xs:enumeration value="102_77.50"/>
+            <xs:enumeration value="103_78.25"/>
+            <xs:enumeration value="104_79.00"/>
+            <xs:enumeration value="105_79.75"/>
+            <xs:enumeration value="106_80.50"/>
+            <xs:enumeration value="107_81.25"/>
+            <xs:enumeration value="108_82.00"/>
+            <xs:enumeration value="109_82.75"/>
+            <xs:enumeration value="110_83.50"/>
+            <xs:enumeration value="111_84.25"/>
+            <xs:enumeration value="112_85.00"/>
+            <xs:enumeration value="113_85.75"/>
+            <xs:enumeration value="114_86.50"/>
+            <xs:enumeration value="115_87.25"/>
+            <xs:enumeration value="116_88.00"/>
+            <xs:enumeration value="117_88.75"/>
+            <xs:enumeration value="118_89.50"/>
+            <xs:enumeration value="119_90.25"/>
+            <xs:enumeration value="120_91.00"/>
+            <xs:enumeration value="121_91.75"/>
+            <xs:enumeration value="122_92.50"/>
+            <xs:enumeration value="123_93.25"/>
+            <xs:enumeration value="124_94.00"/>
+            <xs:enumeration value="125_94.75"/>
+            <xs:enumeration value="126_95.50"/>
+            <xs:enumeration value="127_96.25"/>
+            <xs:enumeration value="128_97.00"/>
+            <xs:enumeration value="129_97.75"/>
+            <xs:enumeration value="130_98.50"/>
+            <xs:enumeration value="131_99.25"/>
+            <xs:enumeration value="132_100.00"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <!-- +++++++++++ -:RSS SlitMaskPhase1:- +++++++++++ -->
+  <xs:group name="SlitMaskPhase1">
+    <xs:annotation>
+      <xs:documentation> Details required for a phase 1 slitmask </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Type" default="None" pipt:phase-one-only="true">
+        <xs:annotation>
+          <xs:documentation> This specifies a simple phase 1 definition of slit type. none - no slit
+            mask. mos - multi object spectroscopy. longslit - longslit spectroscopy.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="None"/>
+            <xs:enumeration value="MOS"/>
+            <xs:enumeration value="Longslit"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="SlitWidth" pipt:phase-one-only="true">
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="Value" default="1.25">
+              <xs:simpleType>
+                <xs:restriction base="xs:float">
+                  <xs:minExclusive value="0"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="Units" type="xs:string" fixed="arcseconds"/>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <!-- +++++++++++ -:RSS SlitMaskPhase2:- +++++++++++ -->
+  <xs:group name="SlitMaskPhase2">
+    <xs:annotation>
+      <xs:documentation> Details required for a phase 2 slitmask </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <!-- This is the bar code of the desired slit mask. -->
+      <xs:element name="Id" type="xs:string" default="none" pipt:phase-two-only="true"/>
+      <!-- A base 64 encoded binary of the slitmask file
+        generated by the RSS slitmask tool. -->
+      <xs:element name="File" type="xs:base64Binary" pipt:phase-two-only="true"/>
+    </xs:sequence>
+  </xs:group>
+  <!-- +++++++++++ -:RSS Procedure:- +++++++++++ -->
+  <xs:complexType name="RssProcedure">
+    <xs:annotation>
+      <xs:documentation>An RSS procedure.</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element name="Procedure" default="Normal">
+        <xs:annotation>
+          <xs:documentation> The procedure executes an observation by operating the appropriate
+            mechanisms during the exposure. normal - single exposure with no moving parts.
+            polarimetry - multiple exposures using wave plate patterns. fabry_perot - multiple
+            exposures using the etalon pattern. fp_polarimetry - multiple exposures using both the
+            wave plate patterns and the etalon pattern. focus - multiple exposures using the focus
+            pattern. </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Normal"/>
+            <xs:enumeration value="Polarimetry"/>
+            <xs:enumeration value="Fabry-Perot"/>
+            <xs:enumeration value="FP Polarimetry"/>
+            <xs:enumeration value="Focus"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="RepCount" default="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedInt">
+            <xs:minInclusive value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="PolPatternName">
+        <xs:annotation>
+          <xs:documentation> There are three standard polarimetry patterns selected by name only.
+            Custom patterns are allowed which will require the patterns to be provided.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Linear"/>
+            <xs:enumeration value="Linear Hi"/>
+            <xs:enumeration value="Circular"/>
+            <xs:enumeration value="All Stokes"/>
+            <xs:enumeration value="Custom"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="HWavePattern">
+        <xs:annotation>
+          <xs:documentation> The half wave-plate sequence of positions when using a custom
+            polarimetry pattern </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Station" type="RssWaveStation" maxOccurs="8"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="QWavePattern">
+        <xs:annotation>
+          <xs:documentation> The quarter wave-plate sequence of positions when using a custom
+            polarimetry pattern </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Station" type="RssWaveStation" maxOccurs="8"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EtPattern">
+        <xs:annotation>
+          <xs:documentation> This custom polarimetry pattern scans through wavelengths.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:choice>
+            <xs:group ref="EtPatternPhase1"/>
+            <xs:group ref="EtPatternPhase2"/>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FocusPattern">
+        <xs:annotation>
+          <xs:documentation> This steps through spectrograph focus positions. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="FocusStart">
+              <xs:annotation>
+                <xs:documentation> RSS focus position at which to start a series of focus
+                  exposures. </xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:all>
+                  <xs:element name="Value" default="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:float">
+                        <xs:minInclusive value="0"/>
+                        <xs:maxInclusive value="1600"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Units" type="xs:string" fixed="microns"/>
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="FocusStep">
+              <xs:annotation>
+                <xs:documentation> The focus increment between focus exposures. </xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:all>
+                  <xs:element name="Value" default="100">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:float">
+                        <xs:minInclusive value="-1000"/>
+                        <xs:maxInclusive value="1000"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Units" type="xs:string" fixed="microns"/>
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="FocusCount" default="1">
+              <xs:annotation>
+                <xs:documentation> This is the number of FocusSteps to take starting from
+                  FocusStart. The most counts you could have is with a FocusStart of 0 and a
+                  FocusStep of 1. (That is 1600 + 1). </xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:unsignedInt">
+                  <xs:minInclusive value="1"/>
+                  <xs:maxInclusive value="10001"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <!-- +++++++++++ -:RSS EtPatternPhase1:- +++++++++++ -->
+  <xs:group name="EtPatternPhase1">
+    <xs:sequence>
+      <xs:element name="WavelengthMid" pipt:phase-one-only="true">
+        <xs:annotation>
+          <xs:documentation> This is the wavelength in Angstroms at centre of the scan.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="Value" default="5000" pipt:phase-one-only="true">
+              <xs:simpleType>
+                <xs:restriction base="xs:float">
+                  <xs:minInclusive value="4300"/>
+                  <xs:maxInclusive value="9000"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="Units" type="xs:string" fixed="angstroms" pipt:phase-one-only="true"/>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WavelengthCount" default="1" pipt:phase-one-only="true">
+        <xs:annotation>
+          <xs:documentation> This is the number of Wavelength counts. It gives an indication of the
+            number of readouts required and subsequently the attainable signal to noise ratio for
+            each count. </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedInt">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="100"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <!-- +++++++++++ -:RSS EtPatternPhase2:- +++++++++++ -->
+  <xs:group name="EtPatternPhase2">
+    <xs:sequence>
+      <xs:element name="Wavelength" maxOccurs="100" pipt:phase-two-only="true">
+        <xs:annotation>
+          <xs:documentation>A list of wavelengths</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Value" pipt:phase-two-only="true">
+              <xs:simpleType>
+                <xs:restriction base="xs:float">
+                  <xs:minInclusive value="3200"/>
+                  <xs:maxInclusive value="9000"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="Units" type="xs:string" fixed="angstroms" pipt:phase-two-only="true"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+  <!-- +++++++++++ -:RSS Detector Setup:- +++++++++++ -->
+  <xs:complexType name="RssDetector">
+    <xs:annotation>
+      <xs:documentation>An RSS Detector setup.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="DetMode" default="Normal">
+        <xs:annotation>
+          <xs:documentation> Describes the readout modes </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Normal"/>
+            <xs:enumeration value="Frame Transfer"/>
+            <xs:enumeration value="Shuffle"/>
+            <xs:enumeration value="Slot Mode"/>
+            <xs:enumeration value="Drift Scan"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Calculation" default="None">
+        <xs:annotation>
+          <xs:documentation> PDET can do various calculations on an image. <ul>
+              <li>None - no calculation.</li>
+              <li>Aperture - compute the location of backlit slitmask apertures.</li>
+              <li>Star - compute the location of stars.</li>
+              <li>Peakup - centre stars onto slitmask apertures.</li>
+            </ul>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="None"/>
+            <xs:enumeration value="Aperture"/>
+            <xs:enumeration value="Star"/>
+            <xs:enumeration value="Peakup"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="FrameCount" default="1">
+        <xs:annotation>
+          <xs:documentation> PDET will make this many exposures each time it gets the start command.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedInt">
+            <xs:minInclusive value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="UseWindow" type="xs:boolean" default="false">
+        <xs:annotation>
+          <xs:documentation> States if CCD windowing is on (true) or off (false) </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PDETWindow">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:documentation> CCD windowing as implemented by PDET, requires a row number (Row) and
+              a height (FrameSize) for a window spanning the entire length of the CCD
+            </xs:documentation>
+          </xs:annotation>
+          <xs:all>
+            <xs:element name="Row" default="2051">
+              <xs:simpleType>
+                <xs:restriction base="xs:unsignedInt">
+                  <xs:minInclusive value="1"/>
+                  <xs:maxInclusive value="4102"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="FrameSize" default="512">
+              <xs:simpleType>
+                <xs:restriction base="xs:unsignedInt">
+                  <xs:minInclusive value="1"/>
+                  <xs:maxInclusive value="4102"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PreShuffle" default="0">
+        <xs:annotation>
+          <xs:documentation> Shuffles this many CCD rows before an exposure </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedInt">
+            <xs:maxInclusive value="4096"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="PostShuffle" default="0">
+        <xs:annotation>
+          <xs:documentation> Shuffles this many CCD rows after an exposure </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedInt">
+            <xs:maxInclusive value="4096"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="PreBinRows" default="2">
+        <xs:annotation>
+          <xs:documentation> Combine this many CCD rows during readout </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedInt">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="9"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="PreBinCols" default="2">
+        <xs:annotation>
+          <xs:documentation> Combine this many CCD columns during readout </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedInt">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="9"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Prepare" type="xs:boolean" default="true">
+        <xs:annotation>
+          <xs:documentation> States whether or not the CCD will be prepared for the next exposure
+            after readout - necessary for all CCD modes apart from shuffle. </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ShutterCommand" default="Open">
+        <xs:annotation>
+          <xs:documentation> Tells PDET how to operate the shutter. <ul>
+              <li>Closed - keep the shutter closed during the exposure.</li>
+              <li>Open - open the shutter before the exposure and then close it after.</li>
+              <li>Stay Open - open the shutter before the exposure and keep it open after.</li>
+            </ul>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Closed"/>
+            <xs:enumeration value="Open"/>
+            <xs:enumeration value="Stay Open"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ExposureType" default="PCON Control">
+        <xs:annotation>
+          <xs:documentation> Type of exposure to be made <ul>
+              <li>PCON Control - Exposure type supplied by PCON (Imaging/Spectroscopy/Fabry Perot).</li>
+              <li>Bias - Bias exposure.</li>
+              <li>Flat Field - Flat field exposure.</li>
+              <li>Arc - Wavelength calibration exposure using arc lamp.</li>
+            </ul>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="PCON Control"/>
+            <xs:enumeration value="Bias"/>
+            <xs:enumeration value="Flat Field"/>
+            <xs:enumeration value="Arc"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ExposureTime" type="ExposureTime"/>
+      <xs:element name="Gain" default="Faint">
+        <xs:annotation>
+          <xs:documentation> This sets the amplifier gain for the CCD readout amplifiers. <ul>
+              <li>Faint - high gain for faint objects.</li>
+              <li>Bright - low gain for bright objects.</li>
+            </ul>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Faint"/>
+            <xs:enumeration value="Bright"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ReadoutSpeed" default="Slow">
+        <xs:annotation>
+          <xs:documentation> Sets the readout speed. Faster readouts have more noise. <ul>
+              <li>None - don't do a readout.</li>
+              <li>Slow - do a low noise, slow readout.</li>
+              <li>Fast - do a higher noise, faster readout.</li>
+            </ul>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="None"/>
+            <xs:enumeration value="Slow"/>
+            <xs:enumeration value="Fast"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- +++++++++++ -:RSS Wave Station:- +++++++++++ -->
+  <xs:simpleType name="RssWaveStation">
+    <xs:annotation>
+      <xs:documentation> Each wave plate has 32 detented positions. A wave plate pattern consists of
+        one to eight positions in a particular sequence. </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="0_0"/>
+      <xs:enumeration value="1_11.25"/>
+      <xs:enumeration value="2_22.50"/>
+      <xs:enumeration value="3_33.75"/>
+      <xs:enumeration value="4_45.00"/>
+      <xs:enumeration value="5_56.25"/>
+      <xs:enumeration value="6_67.50"/>
+      <xs:enumeration value="7_78.75"/>
+      <xs:enumeration value="8_90.00"/>
+      <xs:enumeration value="9_101.25"/>
+      <xs:enumeration value="10_112.50"/>
+      <xs:enumeration value="11_123.75"/>
+      <xs:enumeration value="12_135.00"/>
+      <xs:enumeration value="13_146.25"/>
+      <xs:enumeration value="14_157.50"/>
+      <xs:enumeration value="15_168.75"/>
+      <xs:enumeration value="16_180.00"/>
+      <xs:enumeration value="17_191.25"/>
+      <xs:enumeration value="18_202.50"/>
+      <xs:enumeration value="19_213.75"/>
+      <xs:enumeration value="20_225.00"/>
+      <xs:enumeration value="21_236.25"/>
+      <xs:enumeration value="22_247.50"/>
+      <xs:enumeration value="23_258.75"/>
+      <xs:enumeration value="24_270.00"/>
+      <xs:enumeration value="25_281.25"/>
+      <xs:enumeration value="26_292.50"/>
+      <xs:enumeration value="27_303.75"/>
+      <xs:enumeration value="28_315.00"/>
+      <xs:enumeration value="29_326.25"/>
+      <xs:enumeration value="30_337.50"/>
+      <xs:enumeration value="31_348.75"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- +++++++++++ -:Salticam:- +++++++++++ -->
+  <xs:complexType name="Salticam">
+    <xs:annotation>
+      <xs:documentation> A phase 1 SALTICAM instrument configuration </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="Iterations" type="Iterations" default="1"/>
+      <xs:element name="SalticamFilterArray" type="SalticamFilterArray" maxOccurs="unbounded"/>
+      <xs:element name="SalticamDetector" type="SalticamDetector"/>
+      <xs:element name="ExposureTime" type="ExposureTime"/>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- +++++++++++ -:SalticamDetector:- +++++++++++ -->
+  <xs:complexType name="SalticamDetector">
+    <xs:annotation>
+      <xs:documentation>A Salticam Detector setup.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="DetMode" default="Normal">
+        <xs:annotation>
+          <xs:documentation> Describes the readout modes </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Normal"/>
+            <xs:enumeration value="Frame Transfer"/>
+            <xs:enumeration value="Shuffle"/>
+            <xs:enumeration value="Slot Mode"/>
+            <xs:enumeration value="Drift Scan"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="RepeatMode" default="1">
+        <xs:annotation>
+          <xs:documentation> Salticam will make this many exposures each time it gets the start
+            command.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+              <xs:restriction base="xs:unsignedInt">
+                <xs:minInclusive value="1"/>
+                <xs:maxInclusive value="100000"/>
+              </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="PreBinRows" default="4">
+        <xs:annotation>
+          <xs:documentation> Combine this many CCD rows during readout </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedInt">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="9"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="PreBinCols" default="4">
+        <xs:annotation>
+          <xs:documentation> Combine this many CCD columns during readout </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedInt">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="9"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ExposureType" default="Imaging">
+        <xs:annotation>
+          <xs:documentation> Type of exposure to be made <ul>
+              <li>Imaging - Image exposure</li>
+              <li>Bias - Bias exposure.</li>
+              <li>Flat Field - Flat field exposure.</li>
+            </ul>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Bias"/>
+            <xs:enumeration value="Flat Field"/>
+            <xs:enumeration value="Imaging"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Gain" default="Faint">
+        <xs:annotation>
+          <xs:documentation> This sets the amplifier gain for the CCD readout amplifiers. <ul>
+              <li>Faint - high gain for faint objects.</li>
+              <li>Bright - low gain for bright objects.</li>
+            </ul>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Faint"/>
+            <xs:enumeration value="Bright"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ReadoutSpeed" default="Slow">
+        <xs:annotation>
+          <xs:documentation> Sets the readout speed. Faster readouts have more noise. <ul>
+              <li>None - don't do a readout.</li>
+              <li>Slow - do a low noise, slow readout.</li>
+              <li>Fast - do a higher noise, faster readout.</li>
+            </ul>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="None"/>
+            <xs:enumeration value="Slow"/>
+            <xs:enumeration value="Fast"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Nwindows" default="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedInt">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="42"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Window" minOccurs="0" maxOccurs="42">
+        <xs:annotation>
+          <xs:documentation> Defines up to 42 CCD windows, used to restrict readout rows and columns <ul>
+              <li>Column - Central column of the window</li>
+              <li>Row - Central row of the window</li>
+              <li>Width - Width of the window in columns</li>
+              <li>Height - Height of the window in rows</li>
+            </ul>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="Column" type="xs:unsignedInt"/>
+            <xs:element name="Row" type="xs:unsignedInt"/>
+            <xs:element name="Width" type="xs:unsignedInt"/>
+            <xs:element name="Height" type="xs:unsignedInt"/>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- +++++++++++ -:FilterArray:- +++++++++++ -->
+  <xs:complexType name="SalticamFilterArray">
+    <xs:annotation>
+      <xs:documentation> An array of SALTICAM filters to be used in sequence as listed with
+        associated exposure times. </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Filter" default="CLR-S1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Clear"/>
+            <xs:enumeration value="U"/>
+            <xs:enumeration value="B"/>
+            <xs:enumeration value="V"/>
+            <xs:enumeration value="R"/>
+            <xs:enumeration value="I"/>
+            <xs:enumeration value="I.F. 380"/>
+            <xs:enumeration value="I.F. 340"/>
+            <xs:enumeration value="Own"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ExposureTime" type="ExposureTime"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- +++++++++++ -:Fif:- +++++++++++ -->
+  <xs:complexType name="Fif">
+    <xs:annotation>
+      <xs:documentation> An FIF instrument configuration. </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="Iterations" type="Iterations" default="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- +++++++++++ -:PayloadConfig:- +++++++++++ -->
+  <xs:complexType name="PayloadConfig">
+    <xs:annotation>
+      <xs:documentation> A payload configuration is mainly used to cope with the situation where a
+        pellicle setup is being used. It is a rather simple matter to cope with a single instrument
+        being used at a time. The complexity comes in when two instruments are used concurrently.
+        With the pellicle setup the primary instrument is always SALTICAM. The fold mirrors allow
+        one other payload port to be used. So we can use SALTICAM and RSS or SALTICAM and FIF
+        (Fibre Instrument Feed) or SALTICAM and the auxilliary port. </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="Comments" type="xs:string" minOccurs="0"/>
+      <xs:choice>
+        <xs:group ref="SalticamConfigs"/>
+        <xs:group ref="RssConfigs"/>
+        <xs:group ref="FifConfigs"/>
+        <xs:element name="PellicleConfig" type="PellicleConfig"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- +++++++++++ -:PayloadConfigRef:- +++++++++++ -->
+  <xs:complexType name="PayloadConfigRef">
+    <xs:annotation>
+      <xs:documentation> A reference to a PayloadConfig element. </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="ref" type="xs:string" use="required"/>
+  </xs:complexType>
+  <!-- +++++++++++ -:SalticamConfigs:- +++++++++++ -->
+  <xs:group name="SalticamConfigs">
+    <xs:annotation>
+      <xs:documentation> An array of SALTICAM configurations to be used in the sequence as listed.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Salticam" type="Salticam" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:group>
+  <!-- +++++++++++ -:RssConfigs:- +++++++++++ -->
+  <xs:group name="RssConfigs">
+    <xs:annotation>
+      <xs:documentation> An array of RSS configurations to be used in the sequence as listed.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Rss" type="Rss" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:group>
+  <!-- +++++++++++ -:FifConfigs:- +++++++++++ -->
+  <xs:group name="FifConfigs">
+    <xs:annotation>
+      <xs:documentation> An array of FIF (Fibre Instrument Feed) configurations to be used in the
+        sequence as listed. </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Fif" type="Fif" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:group>
+  <!-- +++++++++++ -:PellicleConfig:- +++++++++++ -->
+  <xs:complexType name="PellicleConfig">
+    <xs:annotation>
+      <xs:documentation> A sequence of Salticam configurations followed by a sequence of either Rss
+        or FIF (Fibre Instrument Feed) configurations. </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <!--
+        This is a convenience boolean for inserting into the
+        database. It normally defaults to false in the database.
+        In this case it is true.
+      -->
+      <xs:element name="PellicleSetup" type="xs:boolean" fixed="true"/>
+      <xs:group ref="SalticamConfigs"/>
+      <xs:choice>
+        <xs:group ref="RssConfigs"/>
+        <xs:group ref="FifConfigs"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- +++++++++++ -:ObsConfig:- +++++++++++ -->
+  <xs:complexType name="ObsConfig">
+    <xs:annotation>
+      <xs:documentation> The main purpose of the ObsConfig is to unite a source of light with a
+        payload configuration. The light source may for example be a target or a calibration lamp.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="Comments" type="xs:string" minOccurs="0"/>
+      <xs:element name="Iterations" type="Iterations" default="1"/>
+      <xs:element name="Transparency" type="xs:boolean" default="false">
+        <xs:annotation>
+          <xs:documentation>
+            <ul>
+              <li>true = photometric</li>
+              <li>false = non-photometric</li>
+            </ul>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="MaxSkyBrightness" default="16">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:minInclusive value="16"/>
+            <xs:maxInclusive value="26"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ShareRssCalibrations" type="xs:boolean" default="true"/>
+      <xs:element name="ShareSalticamCalibrations" type="xs:boolean" default="true"/>
+      <xs:element name="CameraPositionAngle" default="0.0">
+        <xs:annotation>
+          <xs:documentation> Position angle of the camera. Degrees from north (being zero) clockwise
+            for positive angle </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:minInclusive value="0.0"/>
+            <xs:maxInclusive value="360.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="FixedAngle" default="0.0">
+        <xs:annotation>
+          <xs:documentation> Fixed angle relative to the ground (horizontal) 0-180 degrees
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:minInclusive value="0.0"/>
+            <xs:maxInclusive value="180.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="SeeingConstraint" type="SeeingConstraint"/>
+      <xs:choice>
+        <xs:annotation>
+          <xs:documentation> Must have either a phase constraint or a timerestriction. The time
+            restriction is an array of dates and times at which observations must be preformed.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:element name="PhaseConstraint" type="PhaseConstraint" minOccurs="0"/>
+        <xs:element name="TimeRestriction" type="xs:dateTime" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:choice>
+      <xs:element name="ObsTime" type="ExposureTime"/>
+      <xs:element name="Target" type="TargetRef"/>
+      <xs:element name="PayloadConfig" type="PayloadConfigRef"/>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- +++++++++++ -:ObsConfigRef:- +++++++++++ -->
+  <xs:complexType name="ObsConfigRef">
+    <xs:annotation>
+      <xs:documentation> A reference to an ObsConfig element. </xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="ref" type="xs:string" use="required"/>
+  </xs:complexType>
+  <!-- +++++++++++ -:PhaseConstraint:- +++++++++++ -->
+  <xs:complexType name="PhaseConstraint">
+    <xs:annotation>
+      <xs:documentation> A phase constraint cannot be defined without first defining an Ephemeris in
+        the referenced Target. </xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element name="PhaseStart" default="0.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:minInclusive value="0.0"/>
+            <xs:maxInclusive value="1.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="PhaseEnd" default="1.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:minInclusive value="0.0"/>
+            <xs:maxInclusive value="1.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <!-- +++++++++++ -:SeeingConstraint:- +++++++++++ -->
+  <xs:complexType name="SeeingConstraint">
+    <xs:annotation>
+      <xs:documentation> Describes what seeing conditions are acceptable (in arcsecs).
+      </xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element name="Comments" type="xs:string" minOccurs="0"/>
+      <xs:element name="Maximum">
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="Value" default="4.0">
+              <xs:simpleType>
+                <xs:restriction base="xs:float">
+                  <xs:minExclusive value="0"/>
+                  <xs:maxInclusive value="9.0"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="Units" type="xs:string" fixed="arcseconds"/>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Minimum">
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="Value" default="0.6">
+              <xs:simpleType>
+                <xs:restriction base="xs:float">
+                  <xs:minExclusive value="0"/>
+                  <xs:maxInclusive value="9.0"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="Units" type="xs:string" fixed="arcseconds"/>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <!-- +++++++++++ -:Ephemeris:- +++++++++++ -->
+  <xs:complexType name="Ephemeris">
+    <xs:all>
+      <xs:element name="TimeZero">
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="Value" default="1.0">
+              <xs:simpleType>
+                <xs:restriction base="xs:double">
+                  <xs:minExclusive value="0"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="Units" type="xs:string" fixed="HJD"/>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Period">
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="Value" default="1.0">
+              <xs:simpleType>
+                <xs:restriction base="xs:double">
+                  <xs:minExclusive value="0"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="Units" type="xs:string" fixed="days"/>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Pdot" minOccurs="0">
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="Value" default="1.0">
+              <xs:simpleType>
+                <xs:restriction base="xs:double">
+                  <xs:minExclusive value="0"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="Units" type="xs:string" fixed="days/day"/>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <!-- +++++++++++ -:ExposureTime:- +++++++++++ -->
+  <xs:complexType name="ExposureTime">
+    <xs:annotation>
+      <xs:documentation>Exposure time in seconds</xs:documentation>
+    </xs:annotation>
+    <xs:all>
+      <xs:element name="Value" default="10.0">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:minExclusive value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Units" type="xs:string" fixed="seconds"/>
+    </xs:all>
+  </xs:complexType>
+  <!-- +++++++++++ -:Iterations:- +++++++++++ -->
+  <xs:simpleType name="Iterations">
+    <xs:annotation>
+      <xs:documentation>A number of iterations, i.e. a positive integer (which mustn't exceed the
+        upper limit of xs:unsignedInt).</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:unsignedInt">
+      <xs:minInclusive value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- +++++++++++ -:Block:- +++++++++++ -->
+  <xs:complexType name="Block">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="Comments" type="xs:string" minOccurs="0"/>
+      <xs:element name="Visits" default="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedInt">
+            <xs:minInclusive value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Wait">
+        <xs:annotation>
+          <xs:documentation> The number of days to wait between each visit to this block.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="Value" default="0">
+              <xs:simpleType>
+                <xs:restriction base="xs:float">
+                  <xs:minInclusive value="0"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="Units" type="xs:string" fixed="days"/>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ObsTime" type="ExposureTime"/>
+      <xs:element name="SubBlock" type="SubBlock" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- +++++++++++ -:SubBlock:- +++++++++++ -->
+  <xs:complexType name="SubBlock">
+    <xs:sequence>
+      <xs:element name="Iterations" type="Iterations" default="1"/>
+      <xs:element name="ObsTime" type="ExposureTime"/>
+      <xs:element name="SubSubBlock" type="SubSubBlock" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- +++++++++++ -:SubSubBlock:- +++++++++++ -->
+  <xs:complexType name="SubSubBlock">
+    <xs:sequence>
+      <xs:element name="Iterations" type="Iterations" default="1"/>
+      <xs:element name="ObsTime" type="ExposureTime"/>
+      <xs:element name="ObsConfig" type="ObsConfigRef" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

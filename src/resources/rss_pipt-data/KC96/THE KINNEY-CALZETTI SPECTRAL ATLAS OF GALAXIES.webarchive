@@ -1,0 +1,1079 @@
+bplist00Ò_WebMainResource_WebSubresourcesÕ	
+^WebResourceURL_WebResourceFrameName_WebResourceData_WebResourceMIMEType_WebResourceTextEncodingName_8http://www.stsci.edu/hst/observatory/cdbs/cdbs_kc96.htmlPOXŠ<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>
+<link rel="SHORTCUT ICON" href="favicon.ico">
+
+  
+      <base href="http://www.stsci.edu/hst/observatory/cdbs/">
+  
+  <title>
+      THE KINNEY-CALZETTI SPECTRAL ATLAS OF GALAXIES 
+    </title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+  
+
+<style type="text/css"><!--
+        
+/* STScI Style Sheet */
+
+body 
+{
+background-color:FFFFFF;
+font-family: Verdana,Arial,Helvetica,sans-serif; 
+color:#333333; 
+font-size:90%;
+}
+td, th {font-family: Verdana,Arial,Helvetica,sans-serif; color:#333333; font-size:.9em}
+
+p, li, dd, dt, blockquote, span, div{font-family: Verdana,Arial,Helvetica,sans-serif; color:#333333}
+h2 {font-size:130%; color:#000000}
+h3 {font-size:115%; color:#000000}
+h4, h5{font-size:105%; color:#000000}
+tt, pre {font-family:Courier, monospace}
+tt.termcommand
+{
+font: 9pt Monaco,Courier,monospace;
+color:#6666FF;
+}
+
+.small{font-size:85%}
+.head{font-weight: bold}
+.box {color:#666666; font-size:.85em}
+.centerbold {font-size:85%; text-align:center; font-weight:bold}
+.indent {margin-left: 15px }
+.data {font-family:Courier, monospace}
+.authordate {font-size: 80%; padding-top: 3px;}
+.date {font-size: 9pt}
+.linespacer {line-height:110%}
+.error {color:red}
+.spaced {margin-left: 14px; padding-top: 5px}
+
+.featurehead {font-size: 90%; color: #666666; font-weight: bold}
+.featuretext {font-size: .85em; color: #666666; text-align: justify}
+
+.navsecondary {color: #666666; margin-left: 14px; vertical-align: text-top; padding-top: 4px}
+.navprimary {font-weight: bold; margin-left: 4px; margin-top: 10px; line-height: 16px; vertical-align: baseline}
+.navbreadcrumb {font-size: .8em; color: #336699; margin-left: 4px; vertical-align: text-top}
+.navbreadcrumbselect {font-size: .8em; color: #336699; margin-left: 4px; vertical-align: text-top; padding-top: 2px}
+
+/* testing only */
+.installerlink
+{
+font: bold 100% Verdana,Arial,Helvetica,sans-serif;
+color:#336699;
+text-align:center;
+}
+
+/* New header */
+.supportnav {color: #6699cc;font-weight: bold; font-size: x-small;}
+.headernav {color: #ffffff; font-weight: bold; font-size: x-small;}
+.currentportallink {color: #000000; text-decoration: none; font-size: x-small;}
+.portallink {color: #ffffff; text-decoration: none; font-size: x-small;}
+.xsmall {font-size: x-small;}
+.smaller {font-size: smaller;}
+.navdot {color:#336699; font-size: smaller;}
+
+/* Search formatting */
+.searchtitle {font-size: 90%; color: #333333; font-weight: bold}
+.searchtext {font-size: 95%; color: #333333}
+.searchsubmit {font-weight: bold; font-size:1.1em; color:#336699; background-color: transparent; text-decoration: none; border: none; cursor: pointer; cursor: hand;}
+.querytext {font-size: 1em; color: #333333}
+      
+.cdbs_file_table
+{
+padding:5px 5px 2px 2px;
+white-space:nowrap;
+}
+
+.table_oddrow
+{
+font-size:11px;
+white-space:nowrap;
+background:#EEEEEE;
+color:#000000;
+padding:5px 5px 5px 2px;
+}
+
+.table_oddrowcentered
+{
+font-size:11px;
+white-space:nowrap;
+text-align:center;
+background:#EEEEEE;
+color:#000000;
+padding:5px 5px 5px 2px;
+}
+
+.table_oddrowcomments
+{
+font-size:11px;
+text-align:left;
+background:#EEEEEE;
+color:#000000;
+padding:5px 5px 5px 2px;
+width:175px;
+}
+.table_evenrow
+{
+font-size:11px;
+white-space:nowrap;
+background:#FFFFFF;
+color:#000000;
+padding:5px 5px 5px 2px;
+}
+
+
+.table_evenrowcentered
+{
+font-size:11px;
+white-space:nowrap;
+text-align:center;
+background:#FFFFFF;
+color:#000000;
+padding:5px 5px 5px 2px;
+}
+
+    --></style>
+</head><!--<body link="#336699" vlink="#336699" bgcolor="#FFFFFF" leftmargin="0" marginwidth="0" marginheight="0" topmargin="0">--><body link="#336699" vlink="#336699" bgcolor="#FFFFFF">
+
+
+
+
+
+
+                  
+    
+
+        
+<table width="717" border="0" cellpadding="0" cellspacing="0" align="center">
+        <!-- start TOP NAVIGATION -->   
+ <tbody><tr>
+  <td colspan="2" rowspan="4" bgcolor="#f1f2f2"><a href="http://www.stsci.edu/"><img border="0" src="/images/H1.jpg" width="144" height="81" alt="STScI Logo"></a></td>
+  <td colspan="6" bgcolor="#F1F2F2"> 
+        <table border="0" width="100%" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td width="362" style="vertical-align:bottom;padding-bottom:0px;margin-bottom:0px;">
+          <a href="http://www.stsci.edu/">
+          <img border="0" src="/images/H2.jpg" width="367" height="27" alt="STScI Logo"></a>
+          </td>
+          <td style="padding:4px 4px 0px 0px;margin:0px;">
+          <div class="supportnav" align="right">
+  <!-- Google CSE Search Box Begins  -->
+<form action="http://www.stsci.edu/hst/observatory/cdbs/stSearchResults" id="cse-search-box">
+  <input type="hidden" name="cx" value="001581200362539404959:zbwublrjs6g">
+  <input type="hidden" name="cof" value="FORID:11">
+  <input type="submit" name="sa" class="searchsubmit" value="Search" tabindex="1" title="Search the STScI site">
+  <input class="querytext" name="q" id="fld_searchquery" title="Enter search terms" type="text" size="14" maxlength="128" style="background-image: url(http://www.google.com/coop/intl/en/images/google_custom_search_watermark.gif); background-repeat: no-repeat; background-attachment: initial; -webkit-background-clip: initial; -webkit-background-origin: initial; background-color: rgb(255, 255, 255); background-position: 0% 50%; ">
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+<!-- Google CSE Search Box Ends -->
+
+
+
+
+          </div>
+          </td>
+          <td bgcolor="#f1f2f2"></td>
+        </tr>
+<!--</form>-->
+        </tbody></table>
+          </td>
+        </tr>
+        <tr>
+
+    <td bgcolor="#cccccc" rowspan="1"><img src="/images/spacer.gif" width="1" height="20" alt=""></td>
+  <td colspan="6" bgcolor="#6699cc"> 
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tbody><tr> 
+    <td bgcolor="#6699cc"><img src="/images/spacer.gif" width="3" height="1" alt=""></td>
+          <td bgcolor="#6699cc" align="center" valign="top">
+          <div class="headernav">
+          <a class="portallink" href="http://www.stsci.edu/institute/">The Institute</a>
+          </div></td>
+    <td bgcolor="#6699cc"><img src="/images/spacer.gif" width="3" height="1" alt=""></td>
+    <td bgcolor="#cccccc"><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td bgcolor="#6699cc"><img src="/images/spacer.gif" width="3" height="1" alt=""></td>
+<td bgcolor="#6699cc" align="center" valign="top"><div class="headernav">
+                    <a class="currentportallink" href="http://www.stsci.edu/hst/">HST</a>
+          </div></td>
+    <td bgcolor="#6699cc"><img src="/images/spacer.gif" width="3" height="1" alt=""></td>
+    <td bgcolor="#cccccc"><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td bgcolor="#6699cc"><img src="/images/spacer.gif" width="3" height="1" alt=""></td>
+<td bgcolor="#6699cc" align="center" valign="top"><div class="headernav">
+                    <a class="portallink" href="http://www.stsci.edu/jwst/">JWST</a>  
+          </div></td>
+    <td bgcolor="#6699cc"><img src="/images/spacer.gif" width="3" height="1" alt=""></td>
+    <td bgcolor="#cccccc"><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td bgcolor="#6699cc"><img src="/images/spacer.gif" width="3" height="1" alt=""></td>
+<td bgcolor="#6699cc" align="center" valign="top"><div class="headernav">
+          <a class="portallink" href="http://cmo.stsci.edu">Community Missions</a>
+</div></td>
+    <td bgcolor="#6699cc"><img src="/images/spacer.gif" width="3" height="1" alt=""></td>
+    <td bgcolor="#cccccc"><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td bgcolor="#6699cc"><img src="/images/spacer.gif" width="3" height="1" alt=""></td>
+<td bgcolor="#6699cc" align="center" valign="top"><div class="headernav">
+          <a class="portallink" href="http://archive.stsci.edu">Data Archives</a>
+</div></td>
+    <td bgcolor="#6699cc"><img src="/images/spacer.gif" width="3" height="1" alt=""></td>
+    <td bgcolor="#cccccc"><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td bgcolor="#6699cc"><img src="/images/spacer.gif" width="3" height="1" alt=""></td>
+<td bgcolor="#6699cc" align="center" valign="top"><div class="headernav">
+          <a class="portallink" href="http://www.stsci.edu/outreach/">News and Outreach</a>
+</div></td>
+    <td bgcolor="#6699cc"><img src="/images/spacer.gif" width="3" height="1" alt=""></td>
+    <td bgcolor="#cccccc"><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td bgcolor="#6699cc"><img src="/images/spacer.gif" width="3" height="1" alt=""></td>
+<td bgcolor="#6699cc" align="center" valign="top"><div class="headernav">
+                    <a class="portallink" href="http://www.stsci.edu/resources/">Resources</a>
+          </div></td>
+    <td bgcolor="#6699cc"><img src="/images/spacer.gif" width="3" height="1" alt=""></td>
+        </tr></tbody></table>
+</td></tr>
+        <!-- end TOP NAVIGATION -->
+
+
+<tr>
+<td bgcolor="#cccccc" colspan="5"><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+</tr>
+
+
+
+<tr>
+    <td bgcolor="#cccccc"><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+
+  <td colspan="5">
+
+        <!-- start TIER 2 BANNER -->
+<a href="/hst/observatory/cdbs/"><img src="/hst/observatory/cdbs/images/L2Banner.gif" width="574" height="33" alt="Banner" border="0"></a>
+        <!-- end TIER 2 BANNER -->
+</td></tr>
+
+ <tr>
+    <td colspan="8" bgcolor="#CCCCCC"><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+ </tr>
+ <tr>
+  
+    <td rowspan="2" bgcolor="#CCCCCC"><img src="/images/spacer.gif" width="1" height="300" alt=""></td>
+
+     <!-- start NAVIGATION -->   
+    <td rowspan="1" width="144" bgcolor="#f1f2f2" valign="top" align="left"> 
+              
+
+   <div class="navbreadcrumb"><a href="/hst/observatory/">Observatory Support</a></div>
+
+   
+   <div class="navbreadcrumbselect"><img width="6" vspace="1" height="6" src="/images/nav_select.gif" alt=""><a href="/hst/observatory/cdbs/">CDBS</a></div><img vspace="4" hspace="6" border="0" height="1" width="128" src="/images/nav_divider.gif" alt="">
+   
+   <div class="navprimary"><a href="/hst/observatory/cdbs/deliveries/">Delivery Procedures</a></div>
+ 
+   
+   <div class="navprimary"><a href="/hst/observatory/cdbs/documents/">Documentation</a></div>
+ 
+   
+   <div class="navprimary"><a href="/hst/observatory/cdbs/file_structure.html">File Structure</a></div>
+ 
+   
+   <div class="navprimary"><a href="SIfileInfo">Reference Files</a></div>
+ 
+   
+   <div class="navsecondary"><a href="/hst/observatory/cdbs/SIfileInfo/reftablequeryindex">ACS</a></div>
+
+   <div class="navsecondary"><a href="/hst/observatory/cdbs/SIfileInfo/COS/reftablequeryindex">COS</a></div>
+
+   <div class="navsecondary"><a href="/hst/fgs/dataanalysis/reffiles">FGS</a></div>
+
+   <div class="navsecondary"><a href="http://www.stsci.edu/hst/nicmos/calibration/reffiles">NICMOS</a></div>
+
+   <div class="navsecondary"><a href="/hst/observatory/cdbs/SIfileInfo/STIS/reftablequeryindex">STIS</a></div>
+
+   <div class="navsecondary"><a href="/hst/observatory/cdbs/SIfileInfo/WFPC2/reftablequeryindex_wfpc2">WFPC2</a></div>
+
+   <div class="navsecondary"><a href="/hst/observatory/cdbs/SIfileInfo/WFC3/reftablequeryindex">WFC3</a></div>
+
+   <div class="navsecondary"><a href="/hst/observatory/cdbs/legacySI.html">Legacy SIs</a></div>
+
+   <div class="navprimary">Synphot Files</div>
+ 
+   
+   <div class="navsecondary"><a href="/hst/observatory/cdbs/cdbs_throughput.html">Throughput Tables</a></div>
+
+   <div class="navsecondary"><a href="/hst/observatory/cdbs/astronomical_catalogs.html">Astronomical Catalogs</a></div>
+
+   <div class="navsecondary"><a href="/hst/observatory/cdbs/modewave.html">Modewave Data</a></div>
+
+
+            <img src="/images/spacer.gif" width="142" height="8" alt="">
+    </td>
+    <!-- end NAVIGATION --> 
+
+    <td bgcolor="#CCCCCC"><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+  
+    <td> <img src="/images/spacer.gif" width="7" height="1" alt=""></td>
+  
+    <td valign="top" width="554"> 
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+ <tbody><tr>
+    <td bgcolor="#cccccc" rowspan="2" width="1"><img src="/images/L2greyspacer.gif" width="1" height="19" alt=""></td>
+        <!-- start SECONDARY NAVIGATION -->  
+    <td height="18" valign="top" align="left" background="/images/L2secondaryNavBack.gif"><img src="/images/spacer.gif" width="5" height="18" border="0" alt=""></td>
+     <!-- end SECONDARY NAVIGATION -->
+    <td rowspan="2" bgcolor="#CCCCCC" width="1"><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+ </tr>
+
+ <tr>
+    <td bgcolor="#CCCCCC"><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+ </tr>
+</tbody></table>
+ 
+
+
+    <!-- start SUPPORTINGCOLUMN -->
+    <!-- start SUPPORTINGCOLUMN -->
+      <table border="0" cellspacing="0" cellpadding="0" style="padding-top:7px;">
+      <tbody><tr><td valign="top" width="409">
+    <!-- end SUPPORTINGCOLUMN -->
+
+<!-- start PAGE CONTENT -->
+
+
+<h2>THE KINNEY-CALZETTI SPECTRAL ATLAS OF GALAXIES</h2>
+
+<p>This atlas contains a set of spectral templates of galaxies covering the
+ultraviolet to near-infrared spectral range, i.e. from 0.12 up to 1 micron.
+The ultraviolet range of the spectral templates has been obtained with the
+large aperture (10" by 20") and low resolution spectrographs of the IUE
+satellite. The optical spectra were obtained through a long slit with a 10"
+width, were a window of 20" long was extracted to mach the IUE aperture.</p>
+
+<p>The spectral templates cover various galaxy morphological types from elliptical
+to late type spiral. Starburst templates for low  (E(B-V &lt; 0.10) to high 
+(0.61 &lt; E(B-V) &lt; 0.70) internal extinction are also available. Several of the
+starburst galaxies used inthe construction of the starburst templates are
+classified as irregulars. Thus, although irregular galaxies are no explicitly
+covered, the starburst templates can be used to cover this morphological type. 
+Details about how the templates have been constructed can be found in Kinney
+et al. (1996) for the different morphological types, and in Calzetti et al.
+(1994) for the starbursts.</p>
+
+<p>The flux of the spectral templates has been normalized to a visual magnitude
+of 12.5 (STMAG system). Details about each individual template can also be
+found in the header of the STSDAS binary file. The header of a STSDAS file
+can be read using the tupar task of the IRAF ttools package.  STSDAS files can
+be dumped into an ASCII formatted file using the tdump task of the IRAF ttools package.</p>
+
+<pre>     Table:   List of Templates in the Kinney-Calzetti Atlas
+
+
+  File Name             Spectral coverage              Comments
+                           (angstroms)
+
+elliptical_template        1235 - 9935                    -
+bulge_template             1235 - 7545                    -
+s0_template                1235 - 9940                    -
+sa_template                1235 - 9940                    -
+sb_template                1235 - 9940                    -
+sc_template                1235 - 7660                    -
+starb1_template            1235 - 9945        starburst with E(B-V) &lt; 0.1
+starb2_template            1235 - 9945        starburst with 0.11 &lt; E(B-V) &lt; 0.21 
+starb3_template            1235 - 9945        starburst with 0.25 &lt; E(B-V) &lt; 0.35
+starb4_template            1235 - 9945        starburst with 0.39 &lt; E(B-V) &lt; 0.50
+starb5_template            1235 - 9945        starburst with 0.51 &lt; E(B-V) &lt; 0.60
+starb6_template            1235 - 9945        starburst with 0.61 &lt; E(B-V) &lt; 0.70
+
+
+
+References
+----------
+
+ Calzetti, D., Kinney, A.L. &amp; Storchi-Bergmann, T. 1994, ApJ 429, 582
+
+ Kinney, A.L., Calzetti, D., Bohlin, R.C., McQuade, K., Storchi-Bergmann, T.
+ &amp; Schmitt, H.R. 1996, ApJ August issue (also STScI preprint 1037)
+</pre>
+
+<p><a href="http://www.stsci.edu/ftp/cdbs/grid/kc96">To the  KINNEY-CALZETTI Spectral Atlas of Galaxies</a></p>
+
+<!-- end PAGE CONTENT -->
+
+          <!-- start SUPPORTINGCOLUMN -->
+
+           </td>
+      <td width="7">
+      <img src="/images/spacer.gif" width="7" alt=""></td>
+      <td valign="top" width="142">
+       <!-- start HELP DESK-->
+ <!-- end HELP DESK-->
+
+
+<!-- start GettingStarted-->
+
+ <!-- end GettingStarted-->
+
+<!-- start SHORTCUTS --> 
+                                                        <table width="142" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td bgcolor="#6699CC" valign="top" colspan="2" rowspan="2"><img src="/images/TableTemplateColoredTopLeftCorner.gif" width="6" height="19" alt=""></td> 
+    <td bgcolor="#CCCCCC" height="1"> <img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td bgcolor="#6699CC" valign="top" align="right" colspan="2" rowspan="2"><img src="/images/TableTemplateColoredTopRightCorner.gif" width="6" height="19" alt=""></td>
+  </tr>
+  <tr>
+    <td bgcolor="#6699CC" align="center"><div><b>Shortcuts</b></div></td>
+  </tr>
+  <tr>
+    <td width="1" bgcolor="#CCCCCC"> <img src="/images/spacer.gif" width="1" height="1" alt=""></td> 
+    <td> <img src="/images/spacer.gif" width="5" height="1" alt=""></td> 
+    <td class="box" width="130"><img src="/images/spacer.gif" height="8" border="0" alt=""><br>                          
+                                                                                                                  
+  <table width="130" border="0" cellspacing="1" cellpadding="0" background="">
+
+      <tbody><tr> 
+      <td class="box" valign="top" width="130">      
+ <a href="/hst/observatory/cdbs/documents/">- Documentation</a>                   
+    <img border="0" hspace="0" vspace="0" align="top" src="/images/spacer.gif" width="1" height="17" alt="">
+      </td>
+    </tr>
+  
+
+      <tr> 
+      <td class="box" valign="top" width="130">      
+ <a href="http://www.ess.stsci.edu/teams/dsb/cdbs.html">- Operations</a>                   
+    <img border="0" hspace="0" vspace="0" align="top" src="/images/spacer.gif" width="1" height="17" alt="">
+      </td>
+    </tr>
+  
+
+      <tr> 
+      <td class="box" valign="top" width="130">      
+ <a href="http://www.ess.stsci.edu/projects/distribution/ICD47/ICD-47_RevF.pdf">- ICD-47 [PDF]</a>                   
+    <img border="0" hspace="0" vspace="0" align="top" src="/images/spacer.gif" width="1" height="17" alt="">
+      </td>
+    </tr>
+  
+
+      <tr> 
+      <td class="box" valign="top" width="130">      
+ <a href="http://www.stsci.edu/wiki/INS-CDBS/CDBSGroupNotes">(INS/CDBS Notes)</a>                   
+    <img border="0" hspace="0" vspace="0" align="top" src="/images/spacer.gif" width="1" height="17" alt="">
+      </td>
+    </tr>
+    </tbody></table>
+
+</td>
+    <td> <img src="/images/spacer.gif" width="5" height="1" alt=""></td>  
+    <td width="1" bgcolor="#CCCCCC"> <img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="2"><img src="/images/TableTemplateBottomLeftCorner.jpg" width="6" height="4" alt=""></td>
+    <td> <img src="/images/spacer.gif" width="1" height="3" alt=""></td>
+    <td colspan="2" rowspan="2"><img src="/images/TableTemplateBottomRightCorner.jpg" width="6" height="4" alt=""></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC" height="1"> <img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+  </tr>
+</tbody></table>
+
+                                       
+ <br>
+<!-- end SHORTCUTS -->
+
+<!-- start Reference-->
+ <!-- end Reference-->
+
+<!-- start Policies-->
+ <!-- end Policies-->
+
+<!-- start Tools -->
+ <!-- end Tools -->
+
+<!-- start Procedures -->
+                             	              <table width="142" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td bgcolor="#CCCCCC" valign="top" colspan="2" rowspan="2"><img src="/images/TableTemplateColoredTopLeftCorner.gif" width="6" height="19" alt=""></td> 
+    <td bgcolor="#CCCCCC" height="1"> <img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+    <td bgcolor="#CCCCCC" valign="top" align="right" colspan="2" rowspan="2"><img src="/images/TableTemplateColoredTopRightCorner.gif" width="6" height="19" alt=""></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC" align="center"><b>Procedures</b></td>
+  </tr>
+  <tr>
+    <td width="1" bgcolor="#CCCCCC"> <img src="/images/spacer.gif" width="1" height="1" alt=""></td> 
+    <td> <img src="/images/spacer.gif" width="5" height="1" alt=""></td> 
+    <td class="box" width="130"><img src="/images/spacer.gif" height="8" border="0" alt=""><br>Assessment &amp; Delivery of Reference Files
+<a href="http://www.stsci.edu/hst/observatory/cdbs/documents/TIR-CDBS-2008-01.pdf">
+[PDF]</a>
+<br><br>
+Delivery of Reference Files to the Data Management System, DRAFT
+<a href="http://www.stsci.edu/hst/observatory/cdbs/documents/TIR-CDBS-2008-02.pdf">
+[PDF]</a>
+<br></td>
+    <td> <img src="/images/spacer.gif" width="5" height="1" alt=""></td>  
+    <td width="1" bgcolor="#CCCCCC"> <img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="2"><img src="/images/TableTemplateBottomLeftCorner.jpg" width="6" height="4" alt=""></td>
+    <td> <img src="/images/spacer.gif" width="1" height="3" alt=""></td>
+    <td colspan="2" rowspan="2"><img src="/images/TableTemplateBottomRightCorner.jpg" width="6" height="4" alt=""></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC" height="1"> <img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+  </tr>
+</tbody></table>
+
+                    <br>
+<!-- end Procedures -->
+
+<!-- start Resources -->
+ <!-- end Resources -->
+
+<!-- start Events -->
+ <!-- end Events -->
+
+<!-- start ExternalResources -->
+<!-- end ExternalResources -->
+
+
+
+
+
+      </td></tr></tbody></table>
+         <!-- end SUPPORTINGCOLUMN -->
+    <br>
+    </td>
+  <td><img border="0" src="/images/spacer.gif" width="7" height="1" alt=""></td>
+
+  <td bgcolor="#CCCCCC"><img src="/images/spacer.gif" width="1" height="1" alt=""></td>
+
+
+  </tr>
+  <tr>
+    <td colspan="6" bgcolor="#999999" height="1"><img src="/images/spacer.gif" alt="" width="546" height="1"></td>
+  </tr>
+
+
+
+
+
+
+<tr><td colspan="7" align="left" style="padding-top:2px;">
+<div style="float:left; width:40%;">
+<a href="/institute/Copyright"><small>Copyright</small></a>
+&nbsp;|&nbsp;<a href="help.html"><small>Help</small></a>
+&nbsp;|&nbsp;<a href="http://www.stsci.edu/hst/observatory/cdbs/cdbs_kc96.html?printable=1"><small>Printable Page</small></a>
+</div>
+<div style="float:right; width:58%; text-align:right;">
+</div>
+</td>
+</tr>
+
+
+
+</tbody></table>
+
+  
+
+
+
+</body></html>Ytext/htmlUUTF-8¯#'+/37;?CGKÔ_WebResourceResponse_"http://www.stsci.edu/images/H1.jpgO^ÿØÿà JFIF  H H  ÿá
+èExif  MM *                  b       j(       1       r2       †‡i       œ   È   H      H   Adobe Photoshop 7.0 2004:02:19 08:41:00         ÿÿ                  Q                          (             &      	º       H      H   ÿØÿà JFIF  H H  ÿí Adobe_CM ÿî Adobe d€   ÿÛ „ 			
+ÿÀ  H €" ÿÝ  ÿÄ?          	
+         	
+ 3 !1AQa"q2‘¡±B#$RÁb34r‚ÑC%’Sðáñcs5¢²ƒ&D“TdEÂ£t6ÒUâeò³„ÃÓuãóF'”¤…´•ÄÔäô¥µÅÕåõVfv†–¦¶ÆÖæö7GWgw‡—§·Ç×ç÷ 5 !1AQaq"2‘¡±B#ÁRÑð3$bár‚’CScs4ñ%¢²ƒ&5ÂÒD“T£dEU6teâò³„ÃÓuãóF”¤…´•ÄÔäô¥µÅÕåõVfv†–¦¶ÆÖæö'7GWgw‡—§·ÇÿÚ   ? ôÔ’I)$’I
+I%Õú†F1ÇÃÁg©ÔsÜkÅK+²3²5oêØlwÐÿ ‘eÿ á}D’Ë¨õ¾Óle9ÙWêpèc¯È° ÷n¯¶]éþ‰ÿ ¦{}øERÎ±õû]‰õw%õ¸98Ô:ü-ÉvïäÙé­N›Ò0úh±ôƒfFIk²²í;®¹ÍZûíþOø*™²Š?›ÇªªÓfuî‡w¡Ôqqn€ïJë«­ðxvË×mANk¾²×Š@ë9}%¤r/cmÇÎ4Y›Óß•N7¹ßö³ììZÕÙ]µ²ÚœÛ+±¡õØÂ×5Ãs^Ç·Úö¹¨ÔdQ“K/Æµ—ShÝ]µ¸=Žó˜öK\°2é«ê¹f^#:ß·7‘éâ›íêµ¾Ž;-wëøÕ~‹Ó³íuÕú,´%;‰$A!$P¤’I%)$’IOÿÐôÔ’I)$’I,ž•_Yú¾YspYGNÇpÖ=¿oÌï·ô–dã²ßü*¶ôÂä¿ÅØ£†à×é±¹]?¨±Œ²çÕö,·l¹þ¶v_gïä —w¯æåÔpºv›VgT¸ÒÛ?¡©Œ~F^S²ÆÙutÕéã2ÏÑý¦ê}_Ñ«=;£tÞ›[Ù‡Ck6’ë­>ûmsŽçÙ“‘fë²,{¹÷=ëœúéwOëÝ¨ÑKò¾Áö‡äbÕüãëÈ8ý8z-ÿ w¯“_£þßÑ®£¨aõfåaZÛéwo þuv0ÃêµŸá)µ¬¶¯ð‰)Åê8ôý[{:·M®¼|+2+gUÅ²¢Ëß^/Ûéª¶¾º²ñ¬uO»k+ûN/­ëþ—ìþžöF=94YÁe71ÕÛYáÌxØö;úÍ\_øÇë-Èé7ôŸ7dÝ.É½‡ôXíÆkº•µÛx>Ûm8vzX_Ïz_¦³Óý«Ú?"†Pì—ØÖPÖkŒ40î{œï¢Ý¾ä”âýS¶û>¯â×’C²0ýL+È$’üK…¹û·;}Œ¡¶û¿}k®SêUly;Ëº†vFÀ/Ê¿ªeUÐßRÖSm5oî.­)$’I
+I$’SÿÑôÔ’I)$’I³éõì¸þŸFm?Rú[éµúÙý'X1åã×Ç{öÜ/Ñç,mudcþŠÿ ÖñhýìôÇúöY_R?ñ!Ò?ð¥_õ(%åú¶[¾¶f^î€òæŽê¾è›*{­9X¸U·wêÙÙ7bScí±–zTQêâûì®õ¿‡õ_ê—WéØ}@ôº›öª+¸;Ü,pµ­·õ«ØYn]ŽŸÒÙ’ëoøEVŽ‡W\³¦¾Û°îcGDÎÆ~Ë.ö?/¥=¾—ÙoÆéÙ{>Ï‹–ÌºÙ…™UuWúS}VÆëõôëp1:¾—‘~fNŸc[UŽû?é(ÌÃc½LK1­þe%4þ°t&7ªY‰Ð0ë¤aôËò21+dQyÈßƒMg«c*Î·¼öUWëÍÕw«ú%<>¯_Öl>™õo ›qŸ…Eýo*\6Ò^îœËh,ýk:Æ¿+ô¿¡£íÎ]üÂÇÀ¯5Ý{ªý`ê—?Ó‹’ÜvœJl«¯Ó5þƒ­Ï}UäåfÕèW™úk?Òÿ 6·¾«tûq°N^]C3:,v0¸Ô·L™HmTl«ÞæzÒìË·ü2Jc‹ÿ Š¾±ÿ …:ý_PZ«+ÿ }cÿ 
+tÿ ú¾ µRR’I$P¤’I%?ÿÒôÔ’I)$’I³éõì²¾¤âG¤áJ¿êV«>˜ÿ ^Ë™è}e+êODÙKó3²±ê§­u»7mÜïeTÆú¹9V~Ÿûmá/AÔú]=FºÚç¾‹±ìcdÒClªÀ7³p}nk«{ë¶›Ye7Tÿ NÚ×õ7£u¾©‘“ÒrÎA§$ÚsFwìûÛè\ÜÝ¹>žO¾¯We£ÿ LºõmÝH‹¾²]ö÷{\:}eÌÁ¨€4Nüçoÿ êÁcâÿ 4²>¸àbôÚñkéø´ã·ªSAcjckklê—Qc›Xoè©û6C¿ë©)—Õz¿IÆÉê9”dcú§;ìn–ú÷Xþ¡»©Ý¸¾û©ºíÌÄý=6×úOµzuz]’ÉËú©õ{-íµØUÑ‘\zyXÓ{vŒÙ“‹èÝìgæoØª¡Ô>¯ÝEZÓ›Ònpª¾¬Zm69Ûh§ª² *u6îm5õ*™K=oÑåÓúO´Ø”—ÿ }cÿ 
+tÿ ú¾ µVV/þ*úÇþéÿ õ}Aj¤¥$’H¡I$’JÿÓôÔ—Ë©"§ê$—Ë©$‡ê `ƒà¹®õ_­tÑXÆë4¸ÑC11¸%Æª+;¶W³.¦ú¹£ûeßö§Ð£ý
+ð$Kô_Ø¾¶åæ7þãÏþ÷!_Ñþ°åzjê¸wú6ê}N»e¬ŸNê÷fû,fïk×Ï)$§è¿±}lÿ ËÌoýÇŸýîQ³¦ýeº·S‘Õñ/¢ÀYm6tâXö8m}v·}µ|ì’J~‹è]/¥ºë3:êW[Mí¹Õ
+œ+Æ7:ŸYÛívEîûKýKÜµ×Ë©"§ê$—Ë©$‡ê$—Ë©$§ÿÙÿí-²Photoshop 3.0 8BIM%                     8BIMê    ­<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.print.PageFormat.PMHorizontalRes</key>
+	<dict>
+		<key>com.apple.print.ticket.creator</key>
+		<string>com.apple.printingmanager</string>
+		<key>com.apple.print.ticket.itemArray</key>
+		<array>
+			<dict>
+				<key>com.apple.print.PageFormat.PMHorizontalRes</key>
+				<real>72</real>
+				<key>com.apple.print.ticket.client</key>
+				<string>com.apple.printingmanager</string>
+				<key>com.apple.print.ticket.modDate</key>
+				<date>2004-02-19T13:40:04Z</date>
+				<key>com.apple.print.ticket.stateFlag</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+	</dict>
+	<key>com.apple.print.PageFormat.PMOrientation</key>
+	<dict>
+		<key>com.apple.print.ticket.creator</key>
+		<string>com.apple.printingmanager</string>
+		<key>com.apple.print.ticket.itemArray</key>
+		<array>
+			<dict>
+				<key>com.apple.print.PageFormat.PMOrientation</key>
+				<integer>1</integer>
+				<key>com.apple.print.ticket.client</key>
+				<string>com.apple.printingmanager</string>
+				<key>com.apple.print.ticket.modDate</key>
+				<date>2004-02-19T13:40:04Z</date>
+				<key>com.apple.print.ticket.stateFlag</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+	</dict>
+	<key>com.apple.print.PageFormat.PMScaling</key>
+	<dict>
+		<key>com.apple.print.ticket.creator</key>
+		<string>com.apple.printingmanager</string>
+		<key>com.apple.print.ticket.itemArray</key>
+		<array>
+			<dict>
+				<key>com.apple.print.PageFormat.PMScaling</key>
+				<real>1</real>
+				<key>com.apple.print.ticket.client</key>
+				<string>com.apple.printingmanager</string>
+				<key>com.apple.print.ticket.modDate</key>
+				<date>2004-02-19T13:40:04Z</date>
+				<key>com.apple.print.ticket.stateFlag</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+	</dict>
+	<key>com.apple.print.PageFormat.PMVerticalRes</key>
+	<dict>
+		<key>com.apple.print.ticket.creator</key>
+		<string>com.apple.printingmanager</string>
+		<key>com.apple.print.ticket.itemArray</key>
+		<array>
+			<dict>
+				<key>com.apple.print.PageFormat.PMVerticalRes</key>
+				<real>72</real>
+				<key>com.apple.print.ticket.client</key>
+				<string>com.apple.printingmanager</string>
+				<key>com.apple.print.ticket.modDate</key>
+				<date>2004-02-19T13:40:04Z</date>
+				<key>com.apple.print.ticket.stateFlag</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+	</dict>
+	<key>com.apple.print.PageFormat.PMVerticalScaling</key>
+	<dict>
+		<key>com.apple.print.ticket.creator</key>
+		<string>com.apple.printingmanager</string>
+		<key>com.apple.print.ticket.itemArray</key>
+		<array>
+			<dict>
+				<key>com.apple.print.PageFormat.PMVerticalScaling</key>
+				<real>1</real>
+				<key>com.apple.print.ticket.client</key>
+				<string>com.apple.printingmanager</string>
+				<key>com.apple.print.ticket.modDate</key>
+				<date>2004-02-19T13:40:04Z</date>
+				<key>com.apple.print.ticket.stateFlag</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+	</dict>
+	<key>com.apple.print.subTicket.paper_info_ticket</key>
+	<dict>
+		<key>com.apple.print.PageFormat.PMAdjustedPageRect</key>
+		<dict>
+			<key>com.apple.print.ticket.creator</key>
+			<string>com.apple.printingmanager</string>
+			<key>com.apple.print.ticket.itemArray</key>
+			<array>
+				<dict>
+					<key>com.apple.print.PageFormat.PMAdjustedPageRect</key>
+					<array>
+						<real>0.0</real>
+						<real>0.0</real>
+						<real>734</real>
+						<real>576</real>
+					</array>
+					<key>com.apple.print.ticket.client</key>
+					<string>com.apple.printingmanager</string>
+					<key>com.apple.print.ticket.modDate</key>
+					<date>2004-02-19T13:40:04Z</date>
+					<key>com.apple.print.ticket.stateFlag</key>
+					<integer>0</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>com.apple.print.PageFormat.PMAdjustedPaperRect</key>
+		<dict>
+			<key>com.apple.print.ticket.creator</key>
+			<string>com.apple.printingmanager</string>
+			<key>com.apple.print.ticket.itemArray</key>
+			<array>
+				<dict>
+					<key>com.apple.print.PageFormat.PMAdjustedPaperRect</key>
+					<array>
+						<real>-18</real>
+						<real>-18</real>
+						<real>774</real>
+						<real>594</real>
+					</array>
+					<key>com.apple.print.ticket.client</key>
+					<string>com.apple.printingmanager</string>
+					<key>com.apple.print.ticket.modDate</key>
+					<date>2004-02-19T13:40:04Z</date>
+					<key>com.apple.print.ticket.stateFlag</key>
+					<integer>0</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>com.apple.print.PaperInfo.PMPaperName</key>
+		<dict>
+			<key>com.apple.print.ticket.creator</key>
+			<string>com.apple.print.pm.PostScript</string>
+			<key>com.apple.print.ticket.itemArray</key>
+			<array>
+				<dict>
+					<key>com.apple.print.PaperInfo.PMPaperName</key>
+					<string>na-letter</string>
+					<key>com.apple.print.ticket.client</key>
+					<string>com.apple.print.pm.PostScript</string>
+					<key>com.apple.print.ticket.modDate</key>
+					<date>2000-07-28T22:57:04Z</date>
+					<key>com.apple.print.ticket.stateFlag</key>
+					<integer>1</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>com.apple.print.PaperInfo.PMUnadjustedPageRect</key>
+		<dict>
+			<key>com.apple.print.ticket.creator</key>
+			<string>com.apple.print.pm.PostScript</string>
+			<key>com.apple.print.ticket.itemArray</key>
+			<array>
+				<dict>
+					<key>com.apple.print.PaperInfo.PMUnadjustedPageRect</key>
+					<array>
+						<real>0.0</real>
+						<real>0.0</real>
+						<real>734</real>
+						<real>576</real>
+					</array>
+					<key>com.apple.print.ticket.client</key>
+					<string>com.apple.printingmanager</string>
+					<key>com.apple.print.ticket.modDate</key>
+					<date>2004-02-19T13:40:04Z</date>
+					<key>com.apple.print.ticket.stateFlag</key>
+					<integer>0</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>com.apple.print.PaperInfo.PMUnadjustedPaperRect</key>
+		<dict>
+			<key>com.apple.print.ticket.creator</key>
+			<string>com.apple.print.pm.PostScript</string>
+			<key>com.apple.print.ticket.itemArray</key>
+			<array>
+				<dict>
+					<key>com.apple.print.PaperInfo.PMUnadjustedPaperRect</key>
+					<array>
+						<real>-18</real>
+						<real>-18</real>
+						<real>774</real>
+						<real>594</real>
+					</array>
+					<key>com.apple.print.ticket.client</key>
+					<string>com.apple.printingmanager</string>
+					<key>com.apple.print.ticket.modDate</key>
+					<date>2004-02-19T13:40:04Z</date>
+					<key>com.apple.print.ticket.stateFlag</key>
+					<integer>0</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>com.apple.print.PaperInfo.ppd.PMPaperName</key>
+		<dict>
+			<key>com.apple.print.ticket.creator</key>
+			<string>com.apple.print.pm.PostScript</string>
+			<key>com.apple.print.ticket.itemArray</key>
+			<array>
+				<dict>
+					<key>com.apple.print.PaperInfo.ppd.PMPaperName</key>
+					<string>Letter</string>
+					<key>com.apple.print.ticket.client</key>
+					<string>com.apple.print.pm.PostScript</string>
+					<key>com.apple.print.ticket.modDate</key>
+					<date>2000-07-28T22:57:04Z</date>
+					<key>com.apple.print.ticket.stateFlag</key>
+					<integer>1</integer>
+				</dict>
+			</array>
+		</dict>
+		<key>com.apple.print.ticket.APIVersion</key>
+		<string>00.20</string>
+		<key>com.apple.print.ticket.privateLock</key>
+		<false/>
+		<key>com.apple.print.ticket.type</key>
+		<string>com.apple.print.PaperInfoTicket</string>
+	</dict>
+	<key>com.apple.print.ticket.APIVersion</key>
+	<string>00.20</string>
+	<key>com.apple.print.ticket.privateLock</key>
+	<false/>
+	<key>com.apple.print.ticket.type</key>
+	<string>com.apple.print.PageFormatTicket</string>
+</dict>
+</plist>
+ 8BIMé     x    H H    Þ@ÿîÿîRg(ü    H H    Ø(    d       ÿ              h                                 8BIMí      H     H    8BIM&               ?€  8BIM        8BIM        8BIMó     	         8BIM
+       8BIM'     
+        8BIMõ     H /ff  lff       /ff  ¡™š       2    Z         5    -        8BIMø     p  ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿè    ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿè    ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿè    ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿè  8BIM          @  @    8BIM         8BIM    9              Q       H 1                                    Q                                            null      boundsObjc         Rct1       Top long        Leftlong        Btomlong   Q    Rghtlong      slicesVlLs   Objc        slice      sliceIDlong       groupIDlong       originenum   ESliceOrigin   autoGenerated    Typeenum   
+ESliceType    Img    boundsObjc         Rct1       Top long        Leftlong        Btomlong   Q    Rghtlong      urlTEXT         nullTEXT         MsgeTEXT        altTagTEXT        cellTextIsHTMLbool   cellTextTEXT        	horzAlignenum   ESliceHorzAlign   default   	vertAlignenum   ESliceVertAlign   default   bgColorTypeenum   ESliceBGColorType    None   	topOutsetlong       
+leftOutsetlong       bottomOutsetlong       rightOutsetlong     8BIM      8BIM        8BIM    	Ö      €   H  €  l   	º  ÿØÿà JFIF  H H  ÿí Adobe_CM ÿî Adobe d€   ÿÛ „ 			
+ÿÀ  H €" ÿÝ  ÿÄ?          	
+         	
+ 3 !1AQa"q2‘¡±B#$RÁb34r‚ÑC%’Sðáñcs5¢²ƒ&D“TdEÂ£t6ÒUâeò³„ÃÓuãóF'”¤…´•ÄÔäô¥µÅÕåõVfv†–¦¶ÆÖæö7GWgw‡—§·Ç×ç÷ 5 !1AQaq"2‘¡±B#ÁRÑð3$bár‚’CScs4ñ%¢²ƒ&5ÂÒD“T£dEU6teâò³„ÃÓuãóF”¤…´•ÄÔäô¥µÅÕåõVfv†–¦¶ÆÖæö'7GWgw‡—§·ÇÿÚ   ? ôÔ’I)$’I
+I%Õú†F1ÇÃÁg©ÔsÜkÅK+²3²5oêØlwÐÿ ‘eÿ á}D’Ë¨õ¾Óle9ÙWêpèc¯È° ÷n¯¶]éþ‰ÿ ¦{}øERÎ±õû]‰õw%õ¸98Ô:ü-ÉvïäÙé­N›Ò0úh±ôƒfFIk²²í;®¹ÍZûíþOø*™²Š?›ÇªªÓfuî‡w¡Ôqqn€ïJë«­ðxvË×mANk¾²×Š@ë9}%¤r/cmÇÎ4Y›Óß•N7¹ßö³ììZÕÙ]µ²ÚœÛ+±¡õØÂ×5Ãs^Ç·Úö¹¨ÔdQ“K/Æµ—ShÝ]µ¸=Žó˜öK\°2é«ê¹f^#:ß·7‘éâ›íêµ¾Ž;-wëøÕ~‹Ó³íuÕú,´%;‰$A!$P¤’I%)$’IOÿÐôÔ’I)$’I,ž•_Yú¾YspYGNÇpÖ=¿oÌï·ô–dã²ßü*¶ôÂä¿ÅØ£†à×é±¹]?¨±Œ²çÕö,·l¹þ¶v_gïä —w¯æåÔpºv›VgT¸ÒÛ?¡©Œ~F^S²ÆÙutÕéã2ÏÑý¦ê}_Ñ«=;£tÞ›[Ù‡Ck6’ë­>ûmsŽçÙ“‘fë²,{¹÷=ëœúéwOëÝ¨ÑKò¾Áö‡äbÕüãëÈ8ý8z-ÿ w¯“_£þßÑ®£¨aõfåaZÛéwo þuv0ÃêµŸá)µ¬¶¯ð‰)Åê8ôý[{:·M®¼|+2+gUÅ²¢Ëß^/Ûéª¶¾º²ñ¬uO»k+ûN/­ëþ—ìþžöF=94YÁe71ÕÛYáÌxØö;úÍ\_øÇë-Èé7ôŸ7dÝ.É½‡ôXíÆkº•µÛx>Ûm8vzX_Ïz_¦³Óý«Ú?"†Pì—ØÖPÖkŒ40î{œï¢Ý¾ä”âýS¶û>¯â×’C²0ýL+È$’üK…¹û·;}Œ¡¶û¿}k®SêUly;Ëº†vFÀ/Ê¿ªeUÐßRÖSm5oî.­)$’I
+I$’SÿÑôÔ’I)$’I³éõì¸þŸFm?Rú[éµúÙý'X1åã×Ç{öÜ/Ñç,mudcþŠÿ ÖñhýìôÇúöY_R?ñ!Ò?ð¥_õ(%åú¶[¾¶f^î€òæŽê¾è›*{­9X¸U·wêÙÙ7bScí±–zTQêâûì®õ¿‡õ_ê—WéØ}@ôº›öª+¸;Ü,pµ­·õ«ØYn]ŽŸÒÙ’ëoøEVŽ‡W\³¦¾Û°îcGDÎÆ~Ë.ö?/¥=¾—ÙoÆéÙ{>Ï‹–ÌºÙ…™UuWúS}VÆëõôëp1:¾—‘~fNŸc[UŽû?é(ÌÃc½LK1­þe%4þ°t&7ªY‰Ð0ë¤aôËò21+dQyÈßƒMg«c*Î·¼öUWëÍÕw«ú%<>¯_Öl>™õo ›qŸ…Eýo*\6Ò^îœËh,ýk:Æ¿+ô¿¡£íÎ]üÂÇÀ¯5Ý{ªý`ê—?Ó‹’ÜvœJl«¯Ó5þƒ­Ï}UäåfÕèW™úk?Òÿ 6·¾«tûq°N^]C3:,v0¸Ô·L™HmTl«ÞæzÒìË·ü2Jc‹ÿ Š¾±ÿ …:ý_PZ«+ÿ }cÿ 
+tÿ ú¾ µRR’I$P¤’I%?ÿÒôÔ’I)$’I³éõì²¾¤âG¤áJ¿êV«>˜ÿ ^Ë™è}e+êODÙKó3²±ê§­u»7mÜïeTÆú¹9V~Ÿûmá/AÔú]=FºÚç¾‹±ìcdÒClªÀ7³p}nk«{ë¶›Ye7Tÿ NÚ×õ7£u¾©‘“ÒrÎA§$ÚsFwìûÛè\ÜÝ¹>žO¾¯We£ÿ LºõmÝH‹¾²]ö÷{\:}eÌÁ¨€4Nüçoÿ êÁcâÿ 4²>¸àbôÚñkéø´ã·ªSAcjckklê—Qc›Xoè©û6C¿ë©)—Õz¿IÆÉê9”dcú§;ìn–ú÷Xþ¡»©Ý¸¾û©ºíÌÄý=6×úOµzuz]’ÉËú©õ{-íµØUÑ‘\zyXÓ{vŒÙ“‹èÝìgæoØª¡Ô>¯ÝEZÓ›Ònpª¾¬Zm69Ûh§ª² *u6îm5õ*™K=oÑåÓúO´Ø”—ÿ }cÿ 
+tÿ ú¾ µVV/þ*úÇþéÿ õ}Aj¤¥$’H¡I$’JÿÓôÔ—Ë©"§ê$—Ë©$‡ê `ƒà¹®õ_­tÑXÆë4¸ÑC11¸%Æª+;¶W³.¦ú¹£ûeßö§Ð£ý
+ð$Kô_Ø¾¶åæ7þãÏþ÷!_Ñþ°åzjê¸wú6ê}N»e¬ŸNê÷fû,fïk×Ï)$§è¿±}lÿ ËÌoýÇŸýîQ³¦ýeº·S‘Õñ/¢ÀYm6tâXö8m}v·}µ|ì’J~‹è]/¥ºë3:êW[Mí¹Õ
+œ+Æ7:ŸYÛívEîûKýKÜµ×Ë©"§ê$—Ë©$‡ê$—Ë©$§ÿÙ8BIM!     U       A d o b e   P h o t o s h o p    A d o b e   P h o t o s h o p   7 . 0    8BIM          ÿáHhttp://ns.adobe.com/xap/1.0/ <?xpacket begin='ï»¿' id='W5M0MpCehiHzreSzNTczkc9d'?>
+<?adobe-xap-filters esc="CR"?>
+<x:xapmeta xmlns:x='adobe:ns:meta/' x:xaptk='XMP toolkit 2.8.2-33, framework 1.5'>
+<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:iX='http://ns.adobe.com/iX/1.0/'>
+
+ <rdf:Description about='uuid:a4a5afc6-6449-11d8-baa7-91e46ca6c0fe'
+  xmlns:xapMM='http://ns.adobe.com/xap/1.0/mm/'>
+  <xapMM:DocumentID>adobe:docid:photoshop:89430677-6449-11d8-baa7-91e46ca6c0fe</xapMM:DocumentID>
+ </rdf:Description>
+
+</rdf:RDF>
+</x:xapmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                       
+<?xpacket end='w'?>ÿî Adobe d@   ÿÛ „ ÿÀ  Q  ÿÝ  ÿÄ¢             	
+            	 
+ 	u!" 1A2#	QBa$3Rqb‘%C¡±ð&4r
+ÁÑ5'áS6‚ñ’¢DTsEF7Gc(UVW²ÂÒâòdƒt“„e£³ÃÓã)8fóu*9:HIJXYZghijvwxyz…†‡ˆ‰Š”•–—˜™š¤¥¦§¨©ª´µ¶·¸¹ºÄÅÆÇÈÉÊÔÕÖ×ØÙÚäåæçèéêôõö÷øùú m!1 "AQ2aqB#‘R¡b3	±$ÁÑCrðá‚4%’ScDñ¢²&5T6Ed'
+sƒ“FtÂÒâòUeuV7„…£³ÃÓãó)”¤´ÄÔäô•¥µÅÕåõ(GWf8v†–¦¶ÆÖæögw‡—§·Ç×ç÷HXhxˆ˜¨¸ÈØèø9IYiy‰™©¹ÉÙéù*:JZjzŠšªºÊÚêúÿÚ   ? ÞA¾¿òWý=©é®²{÷^ëÞý×º÷¿uî½ïÝ{¯{÷^ëÞý×º.=×òÇãßÇºŠ_jvfº3(²`v.†êìMÁäm0ÿ ØV1»2ÔIèYV‹Á¯û~ôH§¯tËó—xä–
+Í•ð+çvîÂM'ü^fê=·²VJVõ%e+~oÍ½¸*)äÖŸä±¿ûG½k_^­§§oóè*ÍÛî\Wn|ZÏdê#¥ÅÒü™êÝÉÕx|¥D¥ƒ|Õ&K®äýÏõYdò{ðuõëÄyôy(kh²Tt¹me.C_Me}D5Tu”µ¤ÔÕ4Õ4îôóÓÔFú‘ÕünžíÕzïÝ{¯{÷^ëÞý×º÷¿uî½ïÝ{¯{÷^ëÞý×ºÿÐÞA¾¿òWý=©é®²{÷^ëÞý×º÷¿uî½ïÝ{¯{÷^è‘wçlö†ñí?Ä?Œ5´XÎãÜ{~ÝÚ]µÇÇšÛÿ zž²ªl|;¶³#%>s³7…D2ÁµðÒ¿Þ7­¨ÑI®¬Úz°g£5ñ×âK|g¡«Ÿd`j3Ýƒ¸«7ïsïÊ³»»ƒ±³òÌ®íßY$|¥OÜKêJ*vƒKúiéâOlu~¿uî˜7ÜÛÛ·_·7^¹ööVžJ\¦pâèsX\•,ƒKÓWâ²PÔÑVSÉý¤•¿uîªo³:ssÿ .Ùr=ÝñÎ“;¸¾"ÓÏ&[¾þ.Á%fqºŸ$ÞLßqüsŽ¥ç¬Ãã¶äNÕ¹í¤¯ü:zš¢‰)åDUq\Ž=h€z°M·¸ð[Ço`·fÖËPç¶ÞåÃãsÛ{7™j±ù|.ZŽìnNŽ¦?Û’Ž²Žd•_ýDžÝé¾Ÿýû¯uï~ëÝ{ßº÷^÷î½×½û¯uï~ëÝÿÑÞA¾¿òWý=©é®²{÷^ëÞý×º÷¿uî½ïÝ{¦|Þg·0™Ã—œRâ°8¼†k'Rß¦Ÿ‹¥šº²Wúÿ ›§…›ßº÷Eƒùjm*ÚŽ‡«ù»iœöÌÕ’ï½ãY?îUQíœäÓRtþÍ¦©b$=™ÕôØØ)`>ˆçš¡‡ëiºw¥÷Ë?’Ï­2ÝgÑ·q›ÏäïTg(úß¸G÷'`í·4ûË¸;6l{
+øö^Ì¦­‹ÅMïå«äŠ’/S;'º÷AÅòñ¦Ü´Ë™ï”ß,ûs±ªãd·&¹÷WNí<^JBd˜ìN·êÚÍ½¶ö¾*žV´òýô?\²·>ý×ºBçwOs/Åµ²}‘Ú»ÏäOÂÝá¹°›'3¼û+ísÙñ£rîŒ”8­³žÜûËG@{#¦ò™Š¤£¯ª¯§þ+ƒy!-D:“ßº÷V<õtóSTÃU5TRCQO4i5=E<Éã–¢“\rA$o¥•¿_¿uîª£áV2^šÞÿ )>ùd}µñï´1»›§âšFá}!Þ¸™»fmZg“÷$¢ØûƒøÎ./õRÂŸØöòÞ¨Þ½X»õ^½ïÝ{¯{÷^ëÞý×º÷¿uî½ïÝ{¯ÿÒÞA¾¿òWý=©é®²{÷^ëÞý×º÷¿uî½ïÝ{ªÈþj½‹Ü;ã®/eô¦_Ý=ç»³=?‘Êç6Ûn¯·Ûy®§ì¼æV›ŠZülÆ2ŸÝè©iê¤ðyõèw÷WøOV^¬á½n;%ñâån%â|tÿ :e©E|kõÖÜM›ÛtÒÞØêý|vìÉ¿ÿ `ôÎv²Ž›xR| Ø’uø¬š8ä®óvÞçÜ»ç	‡I-÷Oá¯¨Š/_ÚA­½	ïÝ{«~÷î½Õ~5û°ú×ùv|ÄÝ]‹-
+` èŽÀÆQR×K
+6Suæ°u8­“‰Ç$Ž<ùŒ†ð¬¢JU__ŸKgßº÷Fâ~ðŸ°~-üoßu’ÉQ[¼:¨÷5|ó6©äÈg6ÞÉWyµÊGÞT¶¯ö¿~ëÝT?yvweõÏóvÆÕuögoÅ°·öâçB÷6ÝÉmÖÉd2™ÛCò7{m¼–#pÇ_NvþS	‹ÛÉûMO?ÝÁ?öt{º7Z"£«›ö÷Mõï~ëÝ{ßº÷^÷î½×½û¯uï~ëÝÿÓÞA¾¿òWý=©é®²{÷^ëÞý×º÷¿uî½ïÝ{¢ófj7ßÀZjˆãžž§ç7[ÓÔC2«Ã-=O^öŒ3Ã4mûrG$o¥“Ý$à:ºô±þ_yïôV½¥ð;vVèß?7-t›:ÙVoOŒ»÷1’Ü9½¨Ÿü²Ÿ	MWQ·2>-qÐ×b–'}r§¶z·TüËlÉüÁ¤ï¹¹7EÈ½ó¨ú7£q=g’ÄÐö”•y¯Œ¸L{åq¿Ç^=·ýÌÃöfäÄA™þ2Ñâª©+¦§wÖþý×º½ý‡Ý_Íiìý¿‹î/…IÚ»øâ¨Û-ºúWä¶ÝÙûNLƒCû±ä¶÷emØr˜ºÈÏü
+j	ò4¾M_oèÓïÝ{ªkþeÃä¯n÷ÄŽ¯þbØí‹Óßû+ä—\Vun­7òîn¢ÃÍ´Ö³9½fùŸÉcp›“+¿)¢–Šƒ<Tpm*Xëª_—[û÷^êï?—¿díý­ü¶ú'°7ö{·¶¿[tþN—vî¥DtØÜ.ªr;‡mæ+ë&¿Ž:<uØcÿ O~ëÝW`Ån-Øÿ þXolM^süÇþeµ°L¤m[mtv£û7gt.ÞÉÂÈž:É652ó§üwÊºú}Ù>!Ö›êó=¿Ó}{ßº÷^÷î½×½û¯uï~ëÝ{ßº÷_ÿÔÞA¾¿òWý=©é®²{÷^ëÞý×º÷¿uî½ïÝ{¢óSþfÀü^Î´ÿ Þ³}ÒN«¯HOæÉÑ}›EŠêïŸ_÷FËùðÚº¿)–®¥ÇTå±Ý‹ñËpI	í®ºß[~EFèÚøŠxW=¼ÔŸiQ-.Š‡FöÏVê¤*kvFÝë?æSÚ_+!ÆôŸË•;“ß_·z¢lßPnn¯ê\.Çìn¢¤øýÞ«@›O)ìÎm&ª¨¢yèr®óÒEQNòÅè÷^ëjî£í-­Üc°{;leñ5øMõ²öÖï£šƒ#KYO6âÂÑæšži#×uYoè>ý×º¨–ýùñ6»çÍ.Êù#¿6mw[u/ÃÍëŽ¨Ø/æÝû‡vïß’Ûº—jÏ·0['lÃ˜Ü¹œÏ÷aË£íix>ùRkG÷î½Õc|_øñò·½ñ?–fE¸:×â7Nç·§ÈNáÚÙÊ©cîŽäè
+~èÜû³¢¶Ç}ÓSJcë¬be*à§]¦Òÿ ª¤ÆÕÖÖèD¥O~ëÝ^çÏêx)7_òû¥¦†*zj›[
+zx#X¡‚(º«¶#ŠbJGq¦…Eü}=Ù>!Ö›èæ{¦ú÷¿uî½ïÝ{¯{÷^ëÞý×º÷¿uî¿ÿÕÞA¾¿òWý=©é®²{÷^ëÞý×º÷¿uî½ïÝ{¢óSþfÀü^Î´ÿ Þ³}ÒN«¯V‘SMM_MQE[OedÒÕÒUD•µTµðÏMSÈñÔSTFìŽŽ¥¶z·UMñ÷²zW~ö7òÒîê&w¬³‘ç»â&ü£¡ËawÇHnyªê·WLÒ†ª“/¹:3?UQO+´•o·êé&EñBú=×º/¿Ëëùy|)ßÿ 1ØÃøë²+û£û+·:}VÑË¸pWfº·±3Ø\m]}ßÍâ¨ê*+6§ðÙÙ¥‰Ýüžý×º‘ñN‹âWÄóùŒv^õ¶Ê¢ùžêN¼]¿·ñé¸³˜¾Úø~½ÆíM‡S2M™Ìn>ÈìuÊ,´ò¼•Õo­ÿ N¤÷^êÀ>tîôÙt÷tÑý¿ÈÏ“{£ý.÷<ŒÒI´Vª‘(z÷¨¨å“÷#ÃõÇŽ—‘ÿ Ê÷ÝËþí÷î½ÐuüÁãóøÿ ‹Á²¿÷Õö×»'Ä:Óp=_oôß^÷î½×½û¯uï~ëÝ{ßº÷^÷î½×ÿÖÞA¾¿òWý=©é®²{÷^ëÞý×º÷¿uî½ïÝ{¢óSþfÀü^Î´ÿ Þ³}ÒN«¯V«íž­Ñ/ù§ŽøyëŠl_Ë½å±6.Š¹sû#uç÷µÁßÛGtcÙ>Ëuõ^ã†¾‹uã7^2£OŠ\^·Ñ*Kº7º÷Zåu—ÌÑñ³¶>oíž–ùÑ¸wŸT¬8?“˜]ëÙ_»K··&ã|öÄ›¼ò¹-Ï³éº÷G?1°éieËÖÐ}tò}ÃË¯ËïÝ{£_ü«é~Ôì^Ü½ñò¶>ßù3A‰¨ìM¹Öýí1êý£ÔÝÚYZÍñ¹ë:¯ª7fkb2›Ò£1¸¥WÏ3f2Oéûzˆ“G¿uî¶RV)VV]JËêVVÿ yúû÷^ê·¿˜/ü~ ¿ñx6Wþú¾Ú÷dø‡Zn£‹íþ›ëÞý×º÷¿uî½ïÝ{¯{÷^ëÞý×ºÿ×ÞA¾¿òWý=©é®²{÷^ëÞý×º÷¿uî½ïÝ{¢óSþfÀü^Î´ÿ Þ³}ÒN«¯Box|‚í~ÁíŒ‡Äß‡Çga(q¹>õïÅ‹9íñ§og!ób(×d†›|wFç£->#ò¤ð•×ÿ “úž­ÒÓ¦þ|ê|«o¬æ«»û·$ÐÔî.ùïI`ìŽÏÊä#»y±¹,å4¸ý—äÓ—KaChÕïÝ{ªÕþp0î©ÛK´’¡k~pìœÇòö¯–•dIU½;7¯wÎÞ™ž/ówÛtÛ¢%ÿ ›r?¿uî®ƒ|tGLö†Î£ëþÊêí‹¿ö†?"ƒ¼¶ÆqQÐÑRÒ­:PŒ¥L”SÓ®”–Iê­~ëÝœÿ Tw7À&ßÿ *÷ŸuüXÃë­ìO‰û“+Þß­vÌnfÈîŸŒ;·5US¸*#Ûôe§—få** «‚7L|°Ô:'¿uî¡|¹ì­ÜT_ËS´zÛqc÷^Åß1¶àÛ;ƒ'’›!¬êžÚÑdm2SÖSÈE<©ô³£Å*$¨ÉîÉñ´ÜVíþ›ëÞý×º÷¿uî½ïÝ{¯{÷^ëÞý×ºÿÐÞD‚Oû÷•ýïÚžšëŸ¿uî½ïÝ{¯{÷^ëÞý×º)_-:±»·Ô¥ß[[¯û¥»«mw&ØÊïm¯]¼6½ufºp'•ÃâóÉcx÷/•Y'O\í^êË««õè¶||øëüÁþ9l)¶VÓïoŠyÊüÖèÜÛó~o­ÍÒ•Y¼{o¤Ù}Ã¼7mu?lSEY”«’T§‹B¤tô°E&ˆ“Ý<?Ÿ[Ô:~×ùœÿ Ïîø{ÿ ¢'´?ûn{÷‡óëÚ‡AÆýé¿Ÿ=ëÜ¦ùìŸ†‚»ª·æ?³6EgCvsI··¶/•ÃPæè›ý/z*)ñùÊ¤_ùiïÞÏ¯jÿ küÎç÷|>ÿ ÑÚ'ýë·=ûÃùõíC®¾Ûùœÿ Ïîø}ÿ ¢#´ûn{÷‡óëÚ‡E?¬¾|Àv¦ÚÎoŽñéOô3ƒù<¿+cêN·ê]Ñ·ið…>ÍÜ[gpãv=~k|ç#Ûûcxe7¹jÚ?Áv·§H¼®žì©§¯êá=ßªuï~ëÝ{ßº÷^÷î½×½û¯uï~ëÝÿÑÞSÚžšëÞý×º÷¿uî½ïÝ{¯{÷^ëÞý×º÷¿uî½ïÝ{¯{÷^ëÞý×º÷¿uî½ïÝ{¯{÷^ëÞý×º÷¿uî½ïÝ{¯{÷^ëÞý×ºÿÙZimage/jpegOhbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯ &,-345OPQRSTUVWXYZ[\]^_`QabfgU$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_"http://www.stsci.edu/images/H1.jpgÒ./01X$classesZ$classname¢12UNSURLXNSObject#A®®zo™ÿµÈÓ6789DWNS.keysZNS.objects€ª:;<=>?@ABC€	€
+€€€€€€€€ªEFGHIJKLMN€€€€€€€€€€WX-Cache]Cache-ControlZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthZConnection]Last-Modified_1HIT from rodan.stsci.edu, MISS from www.stsci.edu_proxy-revalidateYtimeout=5Ubytes_:Zope/(Zope 2.10.4-final, python 2.4.4, linux2) ZServer/1.1Zimage/jpeg_Thu, 26 Feb 2009 21:12:24 GMTU24092_Fri, 08 Feb 2008 18:54:42 GMTÒ./cd£de2_NSMutableDictionary\NSDictionary^Ò./hi£ij2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‡  ¨ ¯ ² µ ¹ ½ À Ã Æ É Ì Ï Ò Õ × Ù Û Ý ß á ã å ç é ë í ô ü
+38ALOU^gipxƒ…’”–˜šœž ¢¤¯±³µ·¹»½¿ÁÃËÙäòù%3gz„ŠÇÒòø!7DGLPd             k              rÔ_"http://www.stsci.edu/images/H2.jpgO	ÓGIF89ao Õ  333òòò§¨ª~~€TTTÌÌÌï÷ï¾¿Áfff;;=æææ™™™ööøÖ×Ù‘“µµµfffðñõwxzJJJÅÅÅ¹º¼‡ˆŠÝÝßVWYžŸ¡npoAAA…†ˆÀÂÁ·¸º¬¬®ÙÚÜ„„„÷ï÷ï÷÷ ¡£LMOTUWrrtØÙÛ™™™ÐÑÓ<=?‰‰‹èéëZZZ¥­­½Å½mnp:BB¡¡£{{{¾¾À€‚kss                        !ù ÿ ,    o  ÿÀˆpH,È¤rÉl:ŸÐ¨tJ­Z¯Ø¬vËíz¿à°xL.›Ïè´zÍn»ßð¸|N¯Ûïø¼~Ïïûÿ€‚ƒ„…†‡ˆ‰Š‹ŒT
+˜
+G” ¡•—(™ªD'«ª²˜ ª¸C¶Ÿ ˜C¡˜Å 
+Ê­C™  º²H —*¢”*¤á*ª¶ -™¢ªÀ  Õñµ¶ ®Cï™à2¡•*“ºÞ|( ƒd²NP€–éÂìÐš×+Ø…Áî‹‡|ð€<` `ÁÈÌýˆ˜€àÃDÿ 20@  …£6Éi!F…£E>p@ÁLI>˜8˜À
+F> ÀÐ¡@!ÀàA&iXX1à% ¨â „¦%&°ÂCQb @ÐBÈ  4ÌzˆuÄÁ| (€›¡1fhY4\Õ«GµNºyŠV(0Š†ÊÒ @«ÅÕ²\0Ò"¯Ð– ¸è4DA`f–Agn¡`‰vG¦ÐUH×	-°8ñÀlT
+STÍë ˆŠ 0X8:€	³xã8Ï]©—€r‰,æJÉ}@„aðÐ@)Hê1PT(4FD¡\èÿ`4D[lmhàýt°X(4PÒUxUM0D%l°WsdÅ¶Û)”T@DxÀlá  êõX“{ < ŠA€„CP(„ 5	‰´R rœ€Ò0@ Ð
+PÄÀ¡%_EÑ ×:ðž ÄÓ'±™d 6¡"BpŠ‡€(„F@-Ð0Ä¡±1 À$`™a*rÐJ -ðAiQboK1€@r%P2‰ó%X‚’–C°é&‡:AN˜º© 0VÒÏLô€rÀ^bÙ™“X+h†ù· ’ äDÄ‘|RÒ X¬ji\	ÿ@(¾Šc[rÔ–j †M ëP¢¥8Ìõ
+ 7F*€ ß&	n=a‚"¨ƒÇ,FÄ¢ëÞÁœE 0	¨òË«ûM)N°”©Á ”ð@i$—æmBª‡ÄOL½¤¸¢»7×ÊcÀ8„  l`¬¬Cäõ	
+5šºbzåÊÂ€@°@oP3Dé¥–ûÒ[¨°B­”PV+ÉÍÐo®ÎüÀ’Fjä@<¬>”ˆ• ÜF@Ó'
+3Ñ"D„Åkƒ,ì°B†øEE…Ý°šBÌ4u¨—ø
+iDlEe²‚8Fxî/…luiàÀ0&ÌÂ^U(ÿÄl©ñÞÌì²Ê´ªf¹&”1däF@Â…[G¬/d˜¨N`Z*ÐÎ
+¤Z@Qm&êd±í ›|©W7À˜,[çf}°ÀÇ£ˆ«ó‡0\Åx«x‡Hb²BG*
+=2‚ÝXàA ÀÆ‘ü³Ž\‰ƒ{1)ÁŽÀ¼ŠÅ,“ZÝ¼F–|`ƒ*€ÔXÂ”p¼;¢˜Ö‚®0FÛ¢:ÀV¡³ZÈLW: K4XÀ–·¢  DDbTb6¬¶-`†CùŒ”¤ÝØo=ÊLÐRAMðP\WÜòW1!š(-FHÀ¿&"Á•a ÊJ\,ÿ |é`Wšä¢$ìaóSX(PÁúåÃ½X‘22q€vd’}DA„Ýu¯~#cÚ2P3…q+  Ò(œ`cÖ
+cïÉÅSÍk>IÕîœÄD™q
+‘rú×’Ñ'¯ cP”è@rVÀ:¹¬u+d™-hÆ†4sƒ«Åº%Éœ‘pEã@&fÒ"=…–üêÔ2›àÀ,É­ÐfÎÂ¹»pìq3á´ž8’s9µ¯=Np HàÍ•4¯w†#Bö&´Ì‹vçó
+Èçå‹Uj(Žâ4È“À,[ü”¹65K_­<ãÐYË,tÓA€[!ªŒõ³¼¢(ÿ0*a(2ÕÍ¢xËÅì!¿¦(<€Ð#äÁUVEž¢hABd/‚-yöì"’Š°´*}ë“%<Â ZÁ5],1[6¯&KaØài,"?s>”ˆ>ÝG‰nê“+(P¥Jq)^¡hÁÿÐ¹ÎhRâ\ 
+%sœ`ÙärÃÊ‹ ä
+©“RB Š‚iN<¶ñPfá¢ÄøT #¡*2A\Ð‚Im a.Ø (Ä60oÑ@(0ÁE™‡ŠÓä\Š–4„s† ´
+dŠðÌ:Ïœ¡Àh]éŠ~øÆ@ Ø	`Ô
+=o0Fê3a×P¨@I2ÿŠ›Veš¼êU‰ÉÒ8gäË~9€sE`¤29á&Îrád2<‰ú!–¤2Èr…'K Ïwl 'ÙKv™˜œÀÀÀö €t%‡ G¡Àª8Ë²<À?Ý£$<ˆ„ÞØ›±
+h¦ò|Ð”’dÐsðˆYkæí‚æ + ¯æ²€,ïÆR€e ì	4‰6‚  â£Œ˜4 &º0`BÀàÆË Š€E;Ø£Ë8”ðgEQ½$Í%%]ù(oÉÖt…ÁÞÚ]Né´Ix€1hŒ·ºÒ3"`¹N8€bð–.Ø#ÌˆÀT^m8 Òð DðÚ¢‚ñô*”LR£#¶M5dQ¯Â4xµøZ°éHù˜)BTQÕµf„}•Ì Ý:¬Soæ—ÊðE¬#0k†JùÐb¥-‹bÇeÈÄ°qð’Ã`¶0TìŒš­pu)Ž ‚`âF×­	üY°Z™êhšo)”‰/©ºåF…ga¤/CÃ:A(’		¿ø2ì‡Œ<
+Æ‚88>,WäÍˆxP.¸÷bó	9A9K½ ò“‚_[ÅÌ1S‡¿!œfÐx#†Nô¢ýèHOºÒ—Îô¦;½èA  ;Yimage/gifOfbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯ &,-345OPQRSTUVWXYZ[\]^_`QabfgU$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_"http://www.stsci.edu/images/H2.jpgÒ./01X$classesZ$classname¢12UNSURLXNSObject#A®®zoÃ›EÈÓ6789DWNS.keysZNS.objects€ª:;<=>?@ABC€	€
+€€€€€€€€ªEFGHIJKLMN€€€€€€€€€€WX-Cache]Cache-ControlZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthZConnection]Last-Modified_1HIT from rodan.stsci.edu, MISS from www.stsci.edu_proxy-revalidateYtimeout=5Ubytes_:Zope/(Zope 2.10.4-final, python 2.4.4, linux2) ZServer/1.1Yimage/gif_Thu, 26 Feb 2009 21:12:24 GMTT2515_Thu, 24 Aug 2006 12:52:35 GMTÒ./cd£de2_NSMutableDictionary\NSDictionary	ÓÒ./hi£ij2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‡  ¨ ¯ ² µ ¹ ½ À Ã Æ É Ì Ï Ò Õ × Ù Û Ý ß á ã å ç é ë í ô ü
+38ALOU^gipxƒ…’”–˜šœž ¢¤¯±³µ·¹»½¿ÁÃËÙäòù%3gz„ŠÇÑñö5BEJNb             k              pÔ_Lhttp://www.google.com/coop/intl/en/images/google_custom_search_watermark.gifOWGIF89aw  ÷  ×××þþþüüüûûûùùùýýýööö÷÷÷òòòüûûúúûúúúóóóõõö÷ööÿýüôóóùûÿôôôïïî­Í¯ðññôÕÐËÕéßÚÙððòÿþúååæäíýôÖÒ·ÂÚÜºµÞçÞÿüûåæéÒÚêþýüòñíððïõøýµÀÙôóñÕÖÚõõõõõôØÔÓøøø¸ÁÖéÜ«Öë×ÓìÔêáÀ¸ÃÛë¼¶íïíêêêÖÖÖæ¹´ùÚÖÂÐìÝçûçÆÂ«·Ïà¹µçÄ¿ÚÕÔÔÖÛéÜÛóóöâââòóóþûâàÚÙÛÙÏÁÈ×èìéÖÔÍ­Ë¯ÎÒÜææçìííÜ²­öðÍÙ¯©úûû×Þî×Üé¸¿ÐÛâïßßàÀËããÞÞÐØê«¼âêéî¿Ç×©»âÛêÜäÝÂàÜËïãâýüôÇÑäééêÀÈÙÜÀ¼Ù¶±®¿åðËÆðà¡ñííõëÄëÓÐßÝÝÿûûÜòÝÚÛÝæÙ×ìÛØ¼ÄØÜãñôáÞÚØÐî»²ðãªêêëºÂÕØàòÿýÖðã©éééÜíÜéêíìèäÂÇÔïé×¬Ì¯ñÍÇÇËÕÞÛÛÐÙîöõõÈÏàãâÝÖÝëÒÛíÃÌàúûýÅÐèçëó½ÊæÎÎÎÊØôÎÙñûøíëÚØóóôðó÷þýý®½ÞüåááÅÁ÷ö÷òãàúáÝØáóÖÜéãÔÑèçç«Ë¯à×²ÝèÜûïíîÇÁ°¿à­¼Ýüýÿ´Ü¶×ÚâÃÌÞÅÍßõÅ¼Ùåø¾ÄÓññòçíùêëêÙÜâÚÜâÝÕ¶åÛ©îîî­Ì°¾ÈàöôôæëöÐ×åÀÎèå¬§ÿàÚÙÓÒÝíÝ«Í­ßáçóòò»ÂÔÖÉÇõöõòë³ÐÝ÷ÚÚÛíçÍããâßÕÔèèèÊÕëåîüãáÝßºµÜçÜÙ×Ñæåæùúû§Å©ß¸²ÙÔ¼äîýýõôïõþÑÜòàáãÿþþâéùáÚÙ­¾ãÿÿüÈÎÜáßÛÕßõêéêöö÷×ÒÑööõÞØÓ§§§ÿÿÿ                              !ù     ,    w   ÿ ë	H° Áƒ*\È°¡Ã‡#JœH±âÂèªŒÈÄÃÅ 1bÙ°H²¤DrfèL@°†A(CP€M õpšÜI2B1i+tƒYïœ‚ë4$\E¡ÀêÀ‘ÓfAzXÒ›ˆu+W…®8x”8‰	<rhÚ›õ`åÂ‘m µ‰—r
+èµ^á„‡N¬Xa¹[sf€J¨õ …ã¤@Œ¶„8p„"ADt 0dÊ
+ÄWzíj8kmÙ]m6¨›¶íßºRz¹ §Z‹º1V7%Ú<Úa®^W’¥Ö*Ý¨:qDÁÿ&8ÛplóæË£'ü[6yôåÕ´¦ÂÀa¥0yÙƒDà‚óð‘„@¢‡%ìÔÓI35Tƒ %¦^oî¥—!cîå†ÛVòÁwPkHR\Ë|ri4Î‚Ì 
+LeøB.†Dr*õÌÑÄ =hC”B‹‰¸›‘ nø^‡K&)bˆ‰ðJ0•œ0	>@§°bA°ÐËšHÁ„õ(pA„Ô#Ã7K08ä1 ‘½eEn|"yUž úÆž’ý¢ˆ³ÃKÔ#[¼³€@´“ÍbÃ…,w¨cÄ3EèRAÄcÍ<¥jR 8@ ªR4Tœ8_˜P@´8¡ê®¼Z‰D™¢B¯ÄÛ<hháÎ»Ècì³Ð4@OL k´Ø ;Oçbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345IJKLMNOPQRSTUVW[\U$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_Lhttp://www.google.com/coop/intl/en/images/google_custom_search_watermark.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A®®zo³MÈÓ6789AWNS.keysZNS.objects€§:;<=>?@€	€
+€€€€€§BCDEFGH€€€€€€€WExpires]Cache-Control\Content-TypeVServerTDate^Content-Length]Last-Modified_Sat, 28 Feb 2009 21:12:24 GMT_public, max-age=172800Yimage/gifSpfe_Thu, 26 Feb 2009 21:12:24 GMTT1367_Wed, 17 Sep 2008 18:24:58 GMTÒ./XY£YZ2_NSMutableDictionary\NSDictionaryWÒ./]^£^_2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d  ‡ ¢ © ¬ ¯ ³ · º ½ À Ã Æ É Ì Ï Ñ Ó Õ × Ù Û Ý ß á ã å ç î öW\epsy‚‹”œ§©±³µ·¹»½¿ÇÉËÍÏÑÓÕÝëøÿ!AZdhˆ­²¶ÌÙÜáåù             `              Õ !"_@http://www.google.com/coop/cse/brand?form=cse-search-box&lang=enOi
+(function() {
+var f = document.getElementById('cse-search-box');
+if (!f) {
+f = document.getElementById('searchbox_demo');
+}
+if (f && f.q) {
+var q = f.q;
+var n = navigator;
+var l = location;
+if (n.platform == 'Win32') {
+q.style.cssText = 'border: 1px solid #7e9db9; padding: 2px;';
+}
+var b = function() {
+if (q.value == '') {
+q.style.background = '#FFFFFF url(http:\x2F\x2Fwww.google.com\x2Fcoop\x2Fintl\x2Fen\x2Fimages\x2Fgoogle_custom_search_watermark.gif) left no-repeat';
+}
+};
+var f = function() {
+q.style.background = '#ffffff';
+};
+q.onfocus = f;
+q.onblur = b;
+if (!/[&?]q=[^&]/.test(l.search)) {
+b();
+}
+}
+})();
+Uutf-8OÕbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345IJKLMNOPQRSTUVW[\U$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_@http://www.google.com/coop/cse/brand?form=cse-search-box&lang=enÒ./01X$classesZ$classname¢12UNSURLXNSObject#A®®zo—ÿÞÈÓ6789AWNS.keysZNS.objects€§:;<=>?@€	€
+€€€€€§BCDEFGH€€€€€€€WExpires]Cache-Control_Content-Encoding\Content-TypeVServerTDate^Content-Length_Sat, 28 Feb 2009 21:12:24 GMT_public, max-age=172800Tgzip_text/html; charset=UTF-8Spfe_Thu, 26 Feb 2009 21:12:24 GMTS378Ò./XY£YZ2_NSMutableDictionary\NSDictionaryiÒ./]^£^_2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d  ‡ ¢ © ¬ ¯ ³ · º ½ À Ã Æ É Ì Ï Ñ Ó Õ × Ù Û Ý ß á ã å ç î öKPYdgmvˆ›¥§©«­¯±³»½¿ÁÃÅÇÉÑßòÿ:SXsw—› ¤ºÇÊÏÓç             `              õÔ$%&_&http://www.stsci.edu/images/spacer.gifO+GIF89a  €        !ù    ,       D ;Ogbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯ &,-345OPQRSTUVWXYZ[\]^_`QabfgU$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_&http://www.stsci.edu/images/spacer.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A®®zoÍN	ÈÓ6789DWNS.keysZNS.objects€ª:;<=>?@ABC€	€
+€€€€€€€€ªEFGHIJKLMN€€€€€€€€€€WX-Cache]Cache-ControlZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthZConnection]Last-Modified_1HIT from rodan.stsci.edu, MISS from www.stsci.edu_proxy-revalidateYtimeout=5Ubytes_:Zope/(Zope 2.10.4-final, python 2.4.4, linux2) ZServer/1.1Yimage/gif_Thu, 26 Feb 2009 21:12:24 GMTR43_Wed, 04 Apr 2007 18:02:49 GMTÒ./cd£de2_NSMutableDictionary\NSDictionary+Ò./hi£ij2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‡  ¨ ¯ ² µ ¹ ½ À Ã Æ É Ì Ï Ò Õ × Ù Û Ý ß á ã å ç é ë í ô ü
+7<EPSYbkmt|‡‰”–˜šœž ¢¤¦¨³µ·¹»½¿ÁÃÅÇÏÝèöý
+)7k~ˆŽËÕõø!7DFKOc             k              qÔ()*_=http://www.stsci.edu/hst/observatory/cdbs/images/L2Banner.gifO'GIF87a>! çÝ *g›,hœ-h.iž0jŸ9jš:k›;lœ=m>nž?oŸ@p Aq¡Br¢Cs£Dt¤Fu¥Ov¢Pw£Qx¤Ry¥Sz¦T{§U|¨V}©W~ªQ‚¬X«Rƒ­Y€¬S„®[‚®Z…ª\ƒ°[†«\‡¬]ˆ­^‰®e†­_Š¯`‹°aŒ±b²cŽ³dµe¶g‘·h’¸i“¹j”ºo“´p”µq–¶r—·s˜¹t™ºuš»v›¼wœ½x¾yž¿zŸÀ{ Á|¡Â‚¢¾ƒ£¿„¤À…¥ÁŒ£Á†¦Â‡§Ãˆ¨Ä‰©ÅŠªÆ‹«ÇŒ¬È“®Å•­Ë”¯Æ•°Ç–±È—²É˜³ÊšµÌŸ³Ë¡´Í›·Î¢µÎœ¸Ï£¶Ï¹Ð¤·ÐžºÑ¥¸Ñ¦¹Ò¤¼Í§ºÓ¥½Î¬»Î­¼Ï®½Ñ¯¾Ò©ÁÓ°¿Ó±ÀÔ²ÁÕ³ÃÖ´Ä×µÅØ¶ÆÙ·ÇÚ¸ÈÜºÉÝ¾ÊØ¿ËÙÀÌÚÁÍÛÂÎÜÃÏÝÄÐÞÆÒàÇÓáÈÔâÉÕãÊÖäË×åÌØæÏØàÐÙáÆÚÿÌ×ÿÒÚâÇÛÿÍØÿÓÛäÎÙÿÔÜåÌÜýÕÝæÓÚýÍÝþÖÞçÎÞÿÐßÿ×àèÑàÿØáéÒáÿÙâêÕáýÚãë×âþÛäìØãÿÝåîÙäÿÚåÿÞæïÛæÿâçêãèëàçýäéìáèþåêíâéÿæìîãëÿçíïçëüäìÿéîðèíýêïòêîþëðóëïÿìñôìðÿíòõíñÿîóöîòÿñòüïõ÷òóýõó÷ðöøóôÿöôøô÷óò÷ùõõÿøõúóøûöøôööÿùöûôùü÷ùöú÷ü÷øÿõúýøú÷ûøýöûþùûøüúþúüùÿúù÷ýÿýûÿûýúøþÿÿüúþüÿùÿÿÿýûüÿûÿýÿþÿüÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,    >! @þ k	H° Áƒ*\È°¡Ã‡#JœH±¢Å‹3j¬¨K.»vé
+¹«×¯_&O
+[LX1c0a*C¦¬¦ÍšÎl:kÖL4i>}R*íZ5nÔ¢q»Æ­ÚQ¦Ü¢JÊª «X³jÕhªÔ@[Ãj-”é–×³_Åª½úHÚ³ÕB­ë•¯Uuóâ“ € &˜P¡BÄ  ˜¼Ò›×.^»v;Ê)xqÃNbÅzÕ  ÇŒ!ßm<ZôãÐ¨Aû¢søIé× M“>5^]# F€   Ý”01ï*ãÈï&?®¼9óçËW½ÚÜùókÚ°³cß>»»ìï¾|þÅñ- ‘ÁLh` |âº÷ÔÚß×ž<èUº|uÔ-ÿôþ³D£Ÿ~³ôâ‹€3L4/1xL0ÇÍ2Ì³Ì2Ñ£L3Î<Ó¡‡ÕD4ÓDóÌ5II3T×XãÔQRYóH `	’È[8æU5W3:JU5¬Ð(›ÀÕã‘@êhÍ%XÂÊ[‹ô0A¢u—.­t„Ÿ‡É Ýhåçå–«ôG¦)ºDC x©Ë”1ÑQ¾9ÑÑ+&…™ºˆb€nŸè‚×€GxáéK~¨è©/ *ÑH§KžªŸ~Ù©‹~Q üåigP‘_šþŸøFC+£µ‚ßm™à× eªß+â[†ª©Ÿ.lÎ‚¥øé×çº'~€ZP@¿:Ú' +(¡ú=zê¤•^ºe‰i~lJªß‰ŽÑè–~™P™ÇÊ©‹†QFž	aœzì ¿áK—¾à)€ú¡À®‚0¤ºôe‚—ÑPï¼øùõB~¾8àÛ wÍ¢Kuv„Ê+cø%F³´FÓJ\îM,½ÌÎ¿ã‹KÅ,!2Ë£á…Ìh¨†Î4ýŒ‰Ó@#b5$FS5XsS5ÜXcM×Qc¤ …¸•åÙ_Õø#ÚRe²ä#g]ã‘XRã"¬ ÃöþŽÌŒräÜt[Ö%fEU&®[~b€_0É€­tâ4Ñf¾­ Š~iL@™ …âWG¢¢Ò)£ÕÙžœP(—¾D  º {¹o2€r×kÉ]¯¼Ò/(eÎá›¨ºP. fÂ© }”É©ue~’(™zºe™ºè
+€ 2ÈqÑÛµŸ´²˜.LøfB»ihpèùbB¢¤pMû\¬)qÝa±˜ð¤ŽQ¬£Ì'^ÊÀ0zç›ODf;˜ƒ¦tÑ‰è¦eRƒo@†W=ê[(SþŠ…3ÌŽ
+ƒXÌm|ñÙ eŠT4Ä ú™Éþb BÔ×‘Ol€2(“®°ÂŽÄ1ƒ§¸4ˆ.ˆž¡VGh@k<ø‚¯ ¥‹YhÆd¸£TŒhcA+F‘qdÐäÌXÆÒô¸“g4#M+ÑÔ¤!"i`EL’WŒÂ±Ñ-™Ø[–äÖ¤,]Clj+ÅY¨AÉ³•¢nŒ$Z¾ÆbÔh@‘ÑO—RY?îýpŠÍ"cGºÔJîÝEMgbNíU¿1ÕÎ–’¢Ù,·÷Ã|	crÒÏº†Ký˜âT¯:\ýìÒ.WrïVÒzÌ§9Ì[–É+l&)F­¼ü’—ÇÂËöh%­Ž°‰–€j"°€eLHmi4Æþ8¿‰)O¥é˜r%6[	Í8P¡
+ÉrW4m9Ð™É8yù•0gˆ¬Ñ¤s¢ét¨´bñ+_˜L?P›Â³3Ÿ™Ž¢c4á;RèBÚ2œÆBVãN‰† ±vµj´Èk×€
+Œb”ŒKø¨n4òQR—´¤¡¦­n…ˆªà¶b¤K$c’s“j”®b•­^£äU“*¸£Î,²pNtÔÊVè´u­n+\çúÖºÊÕ®t½«^óÊW¼úu¯í+`+ØÂö°„El_Wv°ŽÔÂdÕE-ú\ˆ¨?ÁØEf…±\ ä¿ š1˜ñ1ã²ÌèP!	jÒjÖhþR†t5¯-¥)Ö€JTdd¥@,FºEË‹Œ‚¥E&,•în¹q¹eJh¹ÆqQI¯8ÅÒX„Ú
+‘áÂâ¸— ¥“v[|¢É~‡¡‚¯€'ÍWÝ_Áó|S‚=œvH”«^ñ‡	Tàj  @@
+:,± B“qF0Ä‚( É>ñ, Q‰Áh…—#ô1Ð€©î0	 4aðà°h 	Þ…Á2xÅ'z0¨kÍÁÅe÷|ãÅš•I})ÀËÞû…Ì· 6.à¯H`u¯|ÿB?ªœpœ`SØÂFò†ÍÛŠ0„À_ˆ‰Àþîã3„ Qˆ9Á˜s|°%êb÷$£hPbšw@ˆ Sæ3çZÀ>\ 	L€	 q3œ g¿¸Á±˜|ƒ€/àåº¢
+>a2iÕb1Àâh4&-ýÔ¢Áø…‹±E£ÖF‘1¢±GœÃCÎ ¤£¡¢B¢kJ¹­O}:•*a%’¢Ä‘‹èÆ¤½9#JÅT¦­¶ê¢å“FJÒ[¾–Š­‚eÝÍCõŠà$˜žêÒf:‚Ã¡b2¶ÊD‡ãá‡N•ÛÒ
+pýÜæD@Œ¤×)-šÂ‡9B#Ò
+\‹£ÒZúÄ¸Êë ¯þþ)Ê âÌ©‹X€ëCe@»—(^êVú‘_¦`;ø¥|”¾ñÓ¥Ón™U¡ô£o_á§/ŸâƒƒC_@ O£.äÇ€ì3;¸°ndP¿%òªšÕ”˜,yßižj‰Š÷Žh T´âˆ:ø& Ê·¸DÉÀàºÐø}ÍŽ¬2µë¾ÖÀiNÖE@¡Á7bWÌEZ»ZàâòòìÎp!Ç]Ã¾Æ/ŒAG-ÃByœP°Ý´×J9¥Æ5ˆMixÍk×J4–ˆQD[Gd›5¢TMN…“Ý¶î¶§±	®Ò¨¸’’‹Š1Š±ÑRýaå€ðþÃKktRës%1«évý¨‰V÷…ç]ØéãWÚòTýÁÏÊjÐjkRmª4kF¦m¶³ÎËä}…Ç&‘âc¤/#~ú§cÕ%³p_¸¢wçP¾ .¥QW&1×Nßt0ÙêL¾j÷5sŒ"K­ôO?Ô%.ifb´b;”ÅN¶ƒM2—?[2µÀOÒR!Èã)¦ v±¤>H3"¢½€;kJøFAÈPÇ`FZ/µkÈ<Á~ô4>Al"2CrlµçSÁ%^ÖPnKf³7NõTÕ$Ìp[õ†^|=âmo!G%â67%JÕÐ\WQþÏä‰¸ˆáÁˆŠØˆøˆ’èˆ”‰•8‰–˜‰˜¸‰—Ø‰šè‰œø‰¢Š¤Š¦8Š§XŠ¨¸ŠªØŠ©øŠ¬‹®h‰óäÕ}¾ e4¸Ð»@k¿@£'Ãðyb…§×8±V3Ô ­•[ÒÐ\ÃÓ@‡‰ 8‚°¥ ?u{È ¥ %Q¢$Yq	è˜Ž—°Î¶Uv#Ðõb…ê˜Žì¨`5n¬ ‹
+ÈÀ"-2À £ÐŽ‚ª“Ÿ`C 2p2_º£N
+Qªs—ùsð	£‘eÖ‘©‘'™‘*™’))
+ "¹þ’(9“2Y“4T ™“0êÔ“ ø“å“A	”BY”?I’ªa“4É’KÙ”J©« LP)@Àc@2NÉ”OÉ•^¹•[ù#è(¥6YJxk·6¡·FCGVør¼¦¢G²ôGÒ@5#"5Ñ0{Ö{´u[ÖÅZñ¿·HÕpV|¸m_cÑ@Ž=r	gaŽ9^3ò7Æç¼ÅU$Vg›’(Dà.‰ØžÂftK¦CÍÂJ›2`ÏÔš£i›¸i^}±qšb––›Ày›£IKýbsµD~! L`^`»ù• ÁNëÒ' P›ÂœØyÚþyøA	îPaF‹ÁšÛ¹º`tŒ‘êy¸B#¸-jò=Ó3Å"â‹Ñ U˜!FC!—E!OÓ…€TÓ5‚I":u†·Õ"PÁ†FšÑT™y6Gá7=RÐ·Ò%*ÈpVòX$KhS+Ç£'¥:zç^´B& ¯C
+	W ;À=ÆS Tð(£S O 3ÓhP D@[œ‘‡
+Å!;›6qP¤0b`d@
+ý
+&·ò	 §Ð’ ·œêƒœ qÐ	>O*   Dƒ€”áiÌùK¹’(¯Óîi
+þã p0¯p¥cp£&Ç#	aú@	›¡¨¯#
+]Úv½!Gš¤Kú‘·
+µp¥Yº¥™jšð@jýñ	n@@uVA pBœ’ ¤€c@&”D`œ½ä¨À)º€œ«ð&ð	±Ðª¯ú¬ð‹#¦~>¾ «wZ«sr«¹:§  ­¾ê£ŸAf_w0˜‹…–”³÷)4tÔFt‰y”G§g!¬g"ÒÐ+˜®X#{:T.²_s~h%(º˜S±{ÉÇ6×ðu7+7²  ›· ©°	‰@m‹€‡9Â|Ô–þ`‘¡qÆ´OgpgµB3´dNó	`P(0p-žB
+  ®¢ýæ£žr¤ÀDºAetÒ¡võã³…Q#°8q"0	  #°=ý†´*aÙÂ%9ªÂ)@–‘âr3 CÅDr4' ŠÀMØ”_Pó‚
+Ÿ€D $ C‹-¶GF¾ð	eP!0½*¨á!2O‹0Q{(—µ?k\ëP@œˆQ °À.qDa‰â€ ¢[³µ
+'D‹C`	ùÇ>º!ùA
+‹Ã§£f‚ö¿ò(¯Ð&PgÖºÉù9¦û
+]Ò'þG&&:úwð’RFu ¿t3ó‚Ñ3¾Ð3?GVHz’4zÈÈ4²Íð4ù±wHÓè¡RaÆà²®@±o|lS	Ge™^!7Éð"ZóÀà
+¡p²Kr	²…6¹ÕÀ
+U8jã†eÂa^‚¯Kª‰8‘3PsÞ¤Ö"wAº!*K»œ’";€jÒðMœb:¶Âh›&úaq€s¾°›fB
+x‚´]¢1­RF?ô<¢ÐÔÉJ± bRxì©E;&a/8E:‡¤áÑ
+3@ZY&   (‹cÝwÆ`,Lò³ ¤¹
+8¬ÃùÑBœÆþùñÂíz8¥1  A*HŠ
+Œ\Q8¸'Ü³JéT~ù!
+#$L±+0”Ã:‚Å Wp,ÔÉ=ŠLŒ)Ï(ø1=‘Ñ(:+*B Pî,ò¦&‹ñ€¿QèyÇÐB—£¥G¢zÂ!Ó°zÐØZ]“Ç–l×p`Ó6H¥\Ìœ%Õ |ÁR¡‡s¨#ÏàlhµÍ_#YqLS”/TÐ:°Ke5Ê=x ¯[ >À&¡V úQ¶T N'­P½ÃrÐ& Ïª=XuÜc}»?PÅÞS ã¹cºC _­„£ä‘(ù;´ÙJYs¯²þAÜs`¿‘(@¤û÷ø<,@?†‘(E
+:÷84'›öF<Þc Ó±)]º&ºÙ²ÛB´Ú=‡A,º0¡ÖºtJµ*³Ot@Éùº`'Û£LÑLÐÏÐKZÔ,øÑÓ"m&ÓñWý–RB÷E
+/à/r@¶%à/`-ùÑ
+ÔÙDºÀEôs,q(£ƒ4Chó‰Yé‹Ÿé+ +!!nTGšm—1ÅkMÓ4òGSS{IÚI¡Ô[AÕ5¤Tlø7
+¼ÍQÑÍ:’Ø™BÒ˜$å67²IÄ§bè}ª¤PÓáÅú£ß”&¶ã.­€qÄþ„‘kç§ü”/n=KÜÄ¸ŽÒ~ö¤wÚ„ÿ£ØJl‚s‘ˆ]B3¾Ô}8·Mt{‹9T¶SÙseŽ-)ð¤2ßÛ}ÁŠƒ§A~÷W?´äKÓ43*(M#]QôÆµÊØK¬ÆCÉ€Ñ´}ÊQKîÌÞ;ÛƒU?½–Eq½h¯lÃ R+aKc!HÃÌàGªÕ­El†±È&™M#—É…Ð:r²°	`Q3KÛR1¹™Ô¦m9Âä;2Õ‡mŒ‡ÕL7Ð3{™[#½‹„½Ræcnæd~æjžælŽæn¾æoÞæp>çr^çq~çtŽçvžçþ|¾ç~®ç€Þçþç‚^è„~èw"u¾"!"²j—uYòè‘N—ŠZ—…¿\8†:• I±"ÌöSL¡ÍÍ %Çu\‰ðÀ§~\‹€ÚÕê²~êGòJ%³žëFÒ{:R™0ëª®êÙ8ëå]ìÆ~ìÈžìÊ¾ìÌÞìÎþìÐíÒ>íÔ^íÖ~ímÂQôd&ÏúX&ÓK¨èµFé+•!/%¿KƒË Ú|y :VÃi5Fá,rÍ€˜Y‘`%^ÿ+}³w¡À¯î™|Èp{@ÕY
+ë²‚à{ãvð‚ð
+/^ÈÀ
+ˆ©TJþÓÐUW±	Ë¶H‘ùþ5ßüëØ®ìŠ°BTÞDp)ó2?óÓþòIKó8Ÿó:oìjô(ÑÀ@õóóŠµëk¯øùÇ@…[H—R4.Þ!9Á—b˜
+±†TÊH‰äU16–éï‹ÙŽpU9r]¿Žm·.doöÒ&ZÛSÑ|X¡²YbÇÞ:PºS-½`ËËî“¡œ’v"3œ’;ï}—‘‹_&>‡’_ºæ‘D_&ˆ_ ŠùÓò,ùTœ?ó¸L-÷R&ª6¨j½ˆ-!GÅ@ŒUØŸ»¦Â€!£e—&â!Rl}9}ÉÐ 5\˜-ò†ÉŸd%°ðåÑþ±~nßëÏ`}‚°öÐ?6Ó#Í—ärÏöK%ÎlSìwð92ð	:[¾0EPõTì]"Ð-7ö•}â?9ß&pšÕ3 ñG×@‚D˜Ð /
+HòåK©Oc@( @†D…
+‰È Òñ`4]}E `BäJ–-[Îš€1NÄ‚¾@¡âRç@&&Bîª+Úª’gmV«h±táJ*ê®_Â„íòí×1dÇŒ†lÙ2eÊŒ1s¶¬™³hÎœM‹VÚ4hÕ¤I›v-n5n×úúµÆ/7`‚.ÅMñbÆ?æf-‘á@‚’A†|m‘ Ê‚þ^,™²eÌŒq®r¨Ã‚6•ÆŒP" "BJÐ×*‰¯Z!Ô¤H©šÄãÔ^¢+7*]­V9T908q‘¦ü4õƒRêÔ F.•éËyCšˆîÖ…Ê)"tBØiÐ îº|OH“A>¡î½’ž+ :]¦ë(»íD"?ÐSh¼ëXò…Œˆx)æ^‰%š‚(Â	Šå?ÅÛ¯%H9¨EDan•¡z#i Þb©eª_‚É*"_j¡*š]†F+d1F™e¾jr,eÚŠ¦iži ¡¦¹ªñK°kª‰&LÐ¸Ù$Î967£f‘Ê*»þìMÅ®±5Ã\i,Î9Iƒm“ÃÉ2kªÑ³²L˜±S1ui¤¶>áˆ Þ^9 h¨  ˆ £ðÃæ¢™£  °ÑŽÚšPN—
+Ø@ŽŒD-`#MQáU€‘S‡€@U¸P—TÍÈ¡tÁ  `MjŒ ˆÀ U˜cW @øDf¥Uà“„ÞCÅŒyE>!yÓ…!)a?u^dâWIiŠSOÈW 1‰¹Yk½Õ>]¶ bÝ· & Y¥uÃ 0† ¥yãM¹ùP* â$zÏ·‚R 9ƒ>éT‰.VUãŒ èX—¯þÍ¨Þ>V5dO 9)^ÿÐVTÄèDc1
+¡$§FT
+ÇXHÚå)­v‰—a|)æÈ]ùÅc„ñea–a†™h¢A«™gžY‹-2ëÚû¿¹‘†/jµ&L¿
+Ñ3±Fí´¦3:l²Î&i¬ñÑê|˜K83,“6»ÆšK:-FFQ­4ðà#ºƒxc>u¼VTUI>]ä˜×‰ˆèP•
+WA¹ 4LÃ!fOÀ!Ì­e]L‰Ó’”Ã} ¤²—¨•8æ…¢$Q¤ <30‚¦š©:<ýi¡æLeáV@ˆ9]\µíúV¤/
+ö ¥ètÊ,þ$bŠ¬Ä‡eªÊ@sˆB<I¯$É+ÀòB=ë=p€‰ƒCÆ =“Œ¨Ðáˆ)tqœ|¡RºÀTDtÇ„yÕ hÂdW’VøˆŽb* $„Ã@z@¦èÂ |MN˜ ®°6.”Hónˆ	± 3˜´FC‚Ô†!IVjá\ðÆ0ŠÑ‹8
+ã¿@ÛW˜A'Ec,xÃ[3Ú’¥ix)tÁË5¨!˜;ÊK|aFkq
+ÈÙiP€Z\&PSˆK8æ’¨™“šWF¤¢+…œ8Ç9Ç-uHáå*¸® °s A~Ó¡ÕÍÂ¶Ñþ@…ò® ÄÌ¢m¢¡ÂW¼")@¬7+D–³“H
+à€æ¸ë 1‘)ŒÐ!’Cö0PIÀT¡™ jP©ÞèÈ¦PWa*Ž˜Dƒ¨Íz£BÚÈF¿|@¬¤’XØhQ,Iì|Œ%™X&	M’]ózùeùài,ÄAð*I:€RB…«XE±.P©	6”eBYÅˆªÚÌkŠ J+T8«ò©GYÈ'˜e‚8üF¡BA¯šI;•²Ô¥ÊAE±&@P™Àz¡Á¼ÜÃ‘ï€ýŸ.–’•¥D£½èç/|aIÇ(ÆV¾âþcÀmSŠÆ3”a·*åo‡„†^¤á·iæoŒ©†1(£¦BU6×¸$æ¥ÉÃt’1˜$CÊKÜbqŽ”+6ó§DqæŒ:Ð;IRféÆ¦™:gI:Q‡D`ÈH9xŠ
+)® ˜À‘YÍôzñám"ª–ÐŸà­m~; le(²Jw‡‘'ðf‘„E‰RŸ§)'Ð@¥(2/èrz¹Ú* ¹O¤øSÉ£—Žv+ªd !Øb^xYv]ye  . p?®À¹)äíbÑ
+ìÚÇ·ÀHæsßÿæcÏ2æ…±žöÔ ™`DTcþ“TœÚy3‡è@"É#€(&Â‘34`góšþ$*ÐÄ¿‚² p æ5¹ 4ðÔ>c©U‰Á)6ÂoˆJ2‹¤]ëT¢1Œ^DÃ®Ñ@F4îØ•&E£¯ÌPÆ3Œ±–»ÍoÔÆÜâ¢H¾øå‘Õ(œbžA:A(Î²˜-ç4k'F¬ò5ŸÍl`4˜¿Èâ*DêNËÈd”â4¤«L!
+ÁOý]/ŸõÝÍ;—x ’´ƒT(`‡@€`Ý1'Ât‚ŽxÕ²G‡üObø¿[»µ9­ØµH{óÄÜ$„Ã$
+9 ‡V0…(¯0§þ@”÷Z9>ºø„´ˆàÏÜþ˜L¿ªr6¢ˆçb˜×¯#mšøBE6’¯”K»­¶¡ç°Êcû¢Áµ£HÛx[GÁÔÅì3n]hÛœñE~#zÏç’|‡±j–MÛ…o¸áªÒ!ÉcT]´ˆ&¡v¦<Ž÷¥¹1…¼ð‰ÁS_àõœR;’D£:ŠFDèJ¶¬#rö
+3~áÇ¿6IÏÍ°Û3í¥¼À%.ÓÆ_À4&Å$zL›áL!ñèÒDúq‹c¨+šÌVÎ1ÖÈ„šÁIº·ÝKÏðD¢"‚R”Z`^8¶öì©‰˜³§J¼'JÀÏÝA¹Æ%vó,@X¼þó"B™óŸ&¿–åôPˆ²3%$.è}ÁãT@"±[ƒ§dp£æE°Dè®M}S©Ý3ÜCÝõ:!OQ ¡¾ ‚¨z¢Î˜x çÕ%€>ÄÚ&DõŸ.DOzÓ£SìYgI^A
+”L™#­À8o0(‰‚Yƒ ‰áê¹wé]ø<èžv#Š²JXp—hx"*Ð±Œ"9œò K¢Ý½{ê¿ÿ›ûZ¢V@ »¸x©ò€1˜—/h§h
+Q4z®h†¤+ 9†¯†;2†_X†cpfÈºgØ£exgÀg¸‹@{/Q¤B²Bóþ›µ‹ŒT`­½+<L»ÈaÎYNã»/t“j9¹´.k…9á¼é±š•_y€0Š»&xSP*ûx€#‚ÚÀ &°¶àaÒ7‘‰€0Ç›—Ž™µ´€ß»§?ÄˆbÁ–"P•È	’¨%Û'ùXP88Û0‹˜—d  ú§ŒH½ïJ
+ùÀÅpÃŒè”ÃJif€:Œ ÞÒ &`ŽZ€	HÆkÙ˜À™ ê`DG„ÄhrŠWøÃQ™)k‚Ú¨€œÈ@‡0 °\¦Pt4X´ Þ¹¬ˆ Û}„ i9¦‘þã!]81É#
+Ú(  Œ9®¡¥Ú`Æ?ÐŸˆ9ÇU„ÅjR˜ïð@P:¢û=2Àˆ+¸?ê¡¦{Š§Ã\Ø…`H3aø]ø»²««±8¸!º¶`»¡‹Gš›.)j B+œCk¸ëFaÃÅ°;LzV”BøkPJ¨„4X`¥BhÊÅ@Î`¼9T§2 &`2˜Mà'_è’ø4 ƒN9S‰70—VCŠþˆòø'8ƒ80—XS@“àn«ž?H9àTpÁD#Òƒ8 2“‰¥0…:L
+ÁE‹(‚ ÙÒÞÀ%ÐAþK)M“ø3ü(	RˆÁ,ˆ= Ì`ò=XLî0…Ù¤”¾,A€5ˆM0åhŠPL9 “ðÁ|Áëéƒ8 ÎòøŒƒ§8ƒ8¨ƒxsªwú²‘7 ‚³¤2PÁùÁ”þR‘2ñšÎÀÀ†
+M’èƒ4HZC·9 Ê4—ëi·ÐM±1Z«J‰žè4b£6Û…º’#_ø…ô
+"Œ†·™cˆ†<{†¹a‹À)Ê-ñ¢ü’¾è2d;ÅhÖVèÊ¾è»7‘†S3ŒD˜†Ç°†u“0äŒDxQn˜Ê@Š;§	Â©hÀ¿Xsü{.ï2ÂÄ@€ƒþÒ‰ H]úNìtK~ºÎ‘{§Õ,9tÉÃd™ïb5ÝØ[Ä­XÃ-{â[û¨çjR·„!ùpª:íÒs[¼’Ó‘;A¡ªÒšÃ÷ü°|À15Í:9z'Ã$P‚»N„—BmTíDH¯ÁÝ§@ÎYÐ’™Ò›º¥òÀÒL
+ù» ’Ú\0’¹	E’¬+® ,®³³'Y·p‹¶¤¼ˆ¢Œ‹Ä/¹“+l“J¼9)…ÏÁŒfH¥6yÊIsŒj(…BˆVAjÅiÐ$Ò‘…¿„MàÂ7©†ÓàŒÜŠhˆ¾s;ÌXsäüÎþrH"\‚Ù‰¢váˆñ®j·™»ÔHÝ¡K‰•Ø’wúLâ§ÜX…v‘Óˆ¥VSŽDu—6Sz"!‚:9S¤XåX¢‘Ì%‚,
+‚­	%³¨*=‹2Åy5¨ŠÕ” •?Q&”r þZOÂd7øè/ #N%6w‹Øãd‹;ˆ¦MÕûz¡LùXšÝ±‘™u&µ2‰ZX£^¨…`˜Õ¹B’]°«´éÁ­3²ð+?ÖÀÖh4n˜i˜‹ÅZ»Æz¤;q`¨4F„DØY `hf Y(…KHÄá2¼“Kz„É¥ÜGÁ“¤@HqÜÑ¨\ÊU%ÁóÖUÈUŒ¯¥EÈ„R ÜBZŒfÈ…QP5Ç	 ;Obplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯ &,-345OPQRSTUVWXYZ[\]^_`QabfgU$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_=http://www.stsci.edu/hst/observatory/cdbs/images/L2Banner.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A®®zoÄ¤ÓÈÓ6789DWNS.keysZNS.objects€ª:;<=>?@ABC€	€
+€€€€€€€€ªEFGHIJKLMN€€€€€€€€€€WX-Cache]Cache-ControlZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthZConnection]Last-Modified_1HIT from rodan.stsci.edu, MISS from www.stsci.edu_proxy-revalidateYtimeout=5Ubytes_:Zope/(Zope 2.10.4-final, python 2.4.4, linux2) ZServer/1.1Yimage/gif_Thu, 26 Feb 2009 21:12:24 GMTT9999_Wed, 30 Jun 2004 16:24:59 GMTÒ./cd£de2_NSMutableDictionary\NSDictionary'Ò./hi£ij2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‡  ¨ ¯ ² µ ¹ ½ À Ã Æ É Ì Ï Ò Õ × Ù Û Ý ß á ã å ç é ë í ô ü
+NS\gjpy‚„‹“ž «­¯±³µ·¹»½¿ÊÌÎÐÒÔÖØÚÜÞæôÿ!&5@N‚•Ÿ¥âì16:P]`ei}             k              ‹Ô,-._*http://www.stsci.edu/images/nav_select.gifO9GIF89a  ‘  /f˜cŒ²óöù   !ù     ,       
+T aˆÇÿ\[I ;Ošbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯"&,-345QRSTUVWXYZ[\]^_`abcdTefjkU$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€!€€  €€€€€ Ó'()$+WNS.base[NS.relative€€ €_*http://www.stsci.edu/images/nav_select.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A®®zp|sÍÈÓ6789EWNS.keysZNS.objects€«:;<=>?@ABCD€	€
+€€€€€€€€€«FGHIJKLMNOP€€€€€€€€€€€WX-CacheWExpires]Cache-ControlZKeep-Alive]Accept-RangesVServer\Content-Type^Content-LengthTDateZConnection]Last-Modified_1HIT from rodan.stsci.edu, MISS from www.stsci.edu_Thu, 26 Feb 2009 16:31:49 GMTYmax-age=1Ytimeout=5Ubytes_:Zope/(Zope 2.10.4-final, python 2.4.4, linux2) ZServer/1.1Yimage/gifR57_Thu, 26 Feb 2009 21:12:25 GMT_Thu, 26 Feb 2009 16:31:48 GMTÒ./gh£hi2_NSMutableDictionary\NSDictionary9Ò./lm£mn2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‰  ª ± ´ · » ¿ Â Å È Ë Î Ñ Ô × Ù Û Ý ß á ã å ç é ë í ï ö þ
+=BKVY_hqsz‚›Ÿ¡£¥§©«­¯±½¿ÁÃÅÇÉËÍÏÑÓÛãñü
+-2=KŸ©³¹ö #CHLboqvzŽ             o              œÔ012_+http://www.stsci.edu/images/nav_divider.gifO7GIF89a‚  €  ÙÙÙ   !ù     ,    ‚   „©Ëí£œ´Ú‹³^ ;O›bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯"&,-345QRSTUVWXYZ[\]^_`abcdTefjkU$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€!€€  €€€€€ Ó'()$+WNS.base[NS.relative€€ €_+http://www.stsci.edu/images/nav_divider.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A®®zpEÈÓ6789EWNS.keysZNS.objects€«:;<=>?@ABCD€	€
+€€€€€€€€€«FGHIJKLMNOP€€€€€€€€€€€WX-CacheWExpires]Cache-ControlZKeep-Alive]Accept-RangesVServer\Content-Type^Content-LengthTDateZConnection]Last-Modified_1HIT from rodan.stsci.edu, MISS from www.stsci.edu_Thu, 26 Feb 2009 16:31:50 GMTYmax-age=1Ytimeout=5Ubytes_:Zope/(Zope 2.10.4-final, python 2.4.4, linux2) ZServer/1.1Yimage/gifR55_Thu, 26 Feb 2009 21:12:24 GMT_Thu, 26 Feb 2009 16:31:49 GMTÒ./gh£hi2_NSMutableDictionary\NSDictionary7Ò./lm£mn2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‰  ª ± ´ · » ¿ Â Å È Ë Î Ñ Ô × Ù Û Ý ß á ã å ç é ë í ï ö þ
+>CLWZ`irt{ƒŽœž ¢¤¦¨ª¬®°²¾ÀÂÄÆÈÊÌÎÐÒÔÜäòý.3>L€ ª´º÷$DIMcprw{             o              Ô456_,http://www.stsci.edu/images/L2greyspacer.gifO9GIF89a  ‘  ÇÉÊÇÈÊÈÉËÇÉË!ù     ,       
+Ü2x™
+Œ£  ;Oœbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯"&,-345QRSTUVWXYZ[\]^_`abcdTefjkU$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€!€€  €€€€€ Ó'()$+WNS.base[NS.relative€€ €_,http://www.stsci.edu/images/L2greyspacer.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A®®zp‰ÈÓ6789EWNS.keysZNS.objects€«:;<=>?@ABCD€	€
+€€€€€€€€€«FGHIJKLMNOP€€€€€€€€€€€WX-CacheWExpires]Cache-ControlZKeep-Alive]Accept-RangesVServer\Content-Type^Content-LengthTDateZConnection]Last-Modified_1HIT from rodan.stsci.edu, MISS from www.stsci.edu_Thu, 26 Feb 2009 16:31:50 GMTYmax-age=1Ytimeout=5Ubytes_:Zope/(Zope 2.10.4-final, python 2.4.4, linux2) ZServer/1.1Yimage/gifR57_Thu, 26 Feb 2009 21:12:24 GMT_Thu, 26 Feb 2009 16:31:49 GMTÒ./gh£hi2_NSMutableDictionary\NSDictionary9Ò./lm£mn2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‰  ª ± ´ · » ¿ Â Å È Ë Î Ñ Ô × Ù Û Ý ß á ã å ç é ë í ï ö þ
+?DMX[ajsu|„‘Ÿ¡£¥§©«­¯±³¿ÁÃÅÇÉËÍÏÑÓÕÝåóþ /4?M¡«µ»ø%EJNdqsx|             o              žÔ89:_2http://www.stsci.edu/images/L2secondaryNavBack.gifO²GIF89a  Ä  ÷÷÷úúúüüüóóóôôôñññïïïöööíîîðððíííõõõòòòùùùûûûøøøììì                                             !ù     ,       /à#>MÙ8¨#¬i¼oÃ²Ô·,< Àá°X†²`Š¨2…X¯Ø ;O£bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯"&,-345QRSTUVWXYZ[\]^_`abcdTefjkU$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€!€€  €€€€€ Ó'()$+WNS.base[NS.relative€€ €_2http://www.stsci.edu/images/L2secondaryNavBack.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A®®zp(	-ÈÓ6789EWNS.keysZNS.objects€«:;<=>?@ABCD€	€
+€€€€€€€€€«FGHIJKLMNOP€€€€€€€€€€€WX-CacheWExpires]Cache-ControlZKeep-Alive]Accept-RangesVServer\Content-Type^Content-LengthTDateZConnection]Last-Modified_1HIT from rodan.stsci.edu, MISS from www.stsci.edu_Thu, 26 Feb 2009 16:31:53 GMTYmax-age=1Ytimeout=5Ubytes_:Zope/(Zope 2.10.4-final, python 2.4.4, linux2) ZServer/1.1Yimage/gifS178_Thu, 26 Feb 2009 21:12:24 GMT_Thu, 26 Feb 2009 16:31:52 GMTÒ./gh£hi2_NSMutableDictionary\NSDictionary²Ò./lm£mn2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‰  ª ± ´ · » ¿ Â Å È Ë Î Ñ Ô × Ù Û Ý ß á ã å ç é ë í ï ö þ
+EJS^agpy{‚Š•—£¥§©«­¯±³µ·¹ÅÇÉËÍÏÑÓÕ×ÙÛãëù&5:ES‡§±»Áþ,LQUkxzƒ—             o              ¥Ô<=>_Ahttp://www.stsci.edu/images/TableTemplateColoredTopLeftCorner.gifOmGIF89a  ³  ÿÿÿÌÌÌÿÿÿ                                       !ù   ,       È@BØœ)Ørc÷g‰ŠiË¾¤ ;O²bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯"&,-345QRSTUVWXYZ[\]^_`abcdTefjkU$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€!€€  €€€€€ Ó'()$+WNS.base[NS.relative€€ €_Ahttp://www.stsci.edu/images/TableTemplateColoredTopLeftCorner.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A®®zp§TÈÓ6789EWNS.keysZNS.objects€«:;<=>?@ABCD€	€
+€€€€€€€€€«FGHIJKLMNOP€€€€€€€€€€€WX-CacheWExpires]Cache-ControlZKeep-Alive]Accept-RangesVServer\Content-Type^Content-LengthTDateZConnection]Last-Modified_1HIT from rodan.stsci.edu, MISS from www.stsci.edu_Thu, 26 Feb 2009 18:26:47 GMTYmax-age=1Ytimeout=5Ubytes_:Zope/(Zope 2.10.4-final, python 2.4.4, linux2) ZServer/1.1Yimage/gifS109_Thu, 26 Feb 2009 21:12:24 GMT_Thu, 26 Feb 2009 18:26:46 GMTÒ./gh£hi2_NSMutableDictionary\NSDictionarymÒ./lm£mn2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‰  ª ± ´ · » ¿ Â Å È Ë Î Ñ Ô × Ù Û Ý ß á ã å ç é ë í ï ö þ
+TYbmpvˆŠ‘™¤¦²´¶¸º¼¾ÀÂÄÆÈÔÖØÚÜÞàâäæèêòú!(5DITb–¶ÀÊÐ;[`dz‡‰Ž’¦             o              ´Ô@AB_Bhttp://www.stsci.edu/images/TableTemplateColoredTopRightCorner.gifOlGIF89a  ³  ÿÿÿÌÌÌÿÿÿ                                       !ù   ,       0H@…X›÷Þ‚¹™Ü¨–ëÙ¦l|F ;O³bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯"&,-345QRSTUVWXYZ[\]^_`abcdTefjkU$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€!€€  €€€€€ Ó'()$+WNS.base[NS.relative€€ €_Bhttp://www.stsci.edu/images/TableTemplateColoredTopRightCorner.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A®®zp”‰LÈÓ6789EWNS.keysZNS.objects€«:;<=>?@ABCD€	€
+€€€€€€€€€«FGHIJKLMNOP€€€€€€€€€€€WX-CacheWExpires]Cache-ControlZKeep-Alive]Accept-RangesVServer\Content-Type^Content-LengthTDateZConnection]Last-Modified_1HIT from rodan.stsci.edu, MISS from www.stsci.edu_Thu, 26 Feb 2009 18:26:47 GMTYmax-age=1Ytimeout=5Ubytes_:Zope/(Zope 2.10.4-final, python 2.4.4, linux2) ZServer/1.1Yimage/gifS108_Thu, 26 Feb 2009 21:12:24 GMT_Thu, 26 Feb 2009 18:26:46 GMTÒ./gh£hi2_NSMutableDictionary\NSDictionarylÒ./lm£mn2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‰  ª ± ´ · » ¿ Â Å È Ë Î Ñ Ô × Ù Û Ý ß á ã å ç é ë í ï ö þ
+UZcnqw€‰‹’š¥§³µ·¹»½¿ÁÃÅÇÉÕ×ÙÛÝßáãåçéëóû	")6EJUc—·ÁËÑ<\ae{ˆŠ“§             o              µÔDEF_=http://www.stsci.edu/images/TableTemplateBottomLeftCorner.jpgOFÿØÿà JFIF   d d  ÿì Ducky     <  ÿî Adobe dÀ   ÿÛ „ 		
+
+
+
+ÿÀ    ÿÄ U                                              !1Aa"BC5                ÿÚ   ? JIª<·Üä–ëí ?ÿÙO°bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯"&,-345QRSTUVWXYZ[\]^_`abcdTefjkU$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€!€€  €€€€€ Ó'()$+WNS.base[NS.relative€€ €_=http://www.stsci.edu/images/TableTemplateBottomLeftCorner.jpgÒ./01X$classesZ$classname¢12UNSURLXNSObject#A®®zp[¬OÈÓ6789EWNS.keysZNS.objects€«:;<=>?@ABCD€	€
+€€€€€€€€€«FGHIJKLMNOP€€€€€€€€€€€WX-CacheWExpires]Cache-ControlZKeep-Alive]Accept-RangesVServer\Content-Type^Content-LengthTDateZConnection]Last-Modified_1HIT from rodan.stsci.edu, MISS from www.stsci.edu_Thu, 26 Feb 2009 18:26:47 GMTYmax-age=1Ytimeout=5Ubytes_:Zope/(Zope 2.10.4-final, python 2.4.4, linux2) ZServer/1.1Zimage/jpegS326_Thu, 26 Feb 2009 21:12:24 GMT_Thu, 26 Feb 2009 18:26:46 GMTÒ./gh£hi2_NSMutableDictionary\NSDictionaryFÒ./lm£mn2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‰  ª ± ´ · » ¿ Â Å È Ë Î Ñ Ô × Ù Û Ý ß á ã å ç é ë í ï ö þ
+PU^ilr{„†• ¢®°²´¶¸º¼¾ÀÂÄÐÒÔÖØÚÜÞàâäæîö$1@EP^’²¼ÆÌ	8X]aw„‡Œ¤             o              ²ÔHIJ_>http://www.stsci.edu/images/TableTemplateBottomRightCorner.jpgOIÿØÿà JFIF   d d  ÿì Ducky     <  ÿî Adobe dÀ   ÿÛ „ 		
+
+
+
+ÿÀ    ÿÄ V                                             1 AQ"#%                ÿÚ   ? Jú{YºÑÖ\`ôäâ­§ÿÙO±bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯"&,-345QRSTUVWXYZ[\]^_`abcdTefjkU$nullÝ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€!€€  €€€€€ Ó'()$+WNS.base[NS.relative€€ €_>http://www.stsci.edu/images/TableTemplateBottomRightCorner.jpgÒ./01X$classesZ$classname¢12UNSURLXNSObject#A®®zp“ã~ÈÓ6789EWNS.keysZNS.objects€«:;<=>?@ABCD€	€
+€€€€€€€€€«FGHIJKLMNOP€€€€€€€€€€€WX-CacheWExpires]Cache-ControlZKeep-Alive]Accept-RangesVServer\Content-Type^Content-LengthTDateZConnection]Last-Modified_1HIT from rodan.stsci.edu, MISS from www.stsci.edu_Thu, 26 Feb 2009 18:26:47 GMTYmax-age=1Ytimeout=5Ubytes_:Zope/(Zope 2.10.4-final, python 2.4.4, linux2) ZServer/1.1Zimage/jpegS329_Thu, 26 Feb 2009 21:12:25 GMT_Thu, 26 Feb 2009 18:26:46 GMTÒ./gh£hi2_NSMutableDictionary\NSDictionaryIÒ./lm£mn2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‰  ª ± ´ · » ¿ Â Å È Ë Î Ñ Ô × Ù Û Ý ß á ã å ç é ë í ï ö þ
+QV_jms|…‡Ž–¡£¯±³µ·¹»½¿ÁÃÅÑÓÕ×ÙÛÝßáãåçï÷%2AFQ_“³½ÇÍ
+9Y^bx…ˆ‘¥             o              ³ÔLMNO_5http://www.stsci.edu/hst/observatory/cdbs/favicon.icoO~          h     (                @                      ÿÿÿ €€€ @@@ ÀÀÀ         ``` ààà  ÐÐÐ 000 PPP  ppp ððð ±±±  YYY FFF JJJ  ===  ýýý îîî  ÞÞÞ ... ¾¾¾ ¯¯¯ ‚‚‚ þþþ  ñññ ïïï   !!! ÑÑÑ ÏÏÏ /// 111 ¿¿¿ >>> ??? AAA ¡¡¡ OOO ŸŸŸ QQQ ___  aaa ooo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   %)-5  43# 	'7   )	)  - "-!'7    ,-7  -16757  #&*,6$( -)%%)   .# * 6     1 (%+       
+     4 5#  0 ' '71 1   2 +##    .7 (   /2.4#                                                                    \image/x-iconObplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver«#)*0"1234U$nullÛ !"V$classR$3R$8R$5R$6R$4R$7R$2R$9R$0R$1€
+€€€€€€€	 Ó$%&'(WNS.base[NS.relative€€ €_5http://www.stsci.edu/hst/observatory/cdbs/favicon.icoÒ+,-.X$classesZ$classname¢./UNSURLXNSObject#A®®|:ZI\image/x-iconP#ïÿÿÿÿÿÿÒ+,56¢6/]NSURLResponse     ) 2 7 : P R d p v  ” — š    £ ¦ © ¬ ¯ ² ´ ¶ ¸ º ¼ ¾ À Â Ä Æ È Ï × ã å ç é!&/:=CLUbclqt             7              ‚        1  <  K  b  t  Š  ¨  ã  ä Yr Y| Y‚ Y” Y Y³ YØ ·ø ¸ ¼o ¼x ¼ Æt Æ~ Êè Êñ Ë@ Ð› Ô† Ô‘ ÔÔ ×A ×G Û  Û) ÛR Û€ ßë ßô à4GÌÕ>ÜåMìõ$` 	>ó š £ ç!W&&&[&Ê++Š+Ê-1È1Ñ23_888U=×=ä             P             ?ø

@@ -1,0 +1,12 @@
+layout
+org.wiyn.etc
+org.wiyn.etc.configuration
+org.wiyn.etc.gui
+org.wiyn.etc.inputSpectra
+org.wiyn.etc.inputSpectrum.gui
+org.wiyn.etc.odi
+org.wiyn.etc.odi.gui
+org.wiyn.etc.odi.gui.utils
+za.ac.salt.pipt.common
+za.ac.salt.pipt.common.dataExchange
+za.ac.salt.pipt.common.gui

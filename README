@@ -1,0 +1,16 @@
+You need to run ina BASH shell environment
+
+To build:
+source configure
+ant
+
+to run:
+source configure
+odietc
+
+to use:
+i) in The Spectrum panel, select a target spectrum. select a filter, and an airmass
+ii) press display
+iii) in the Display panel, look at the spectra. If the scale of the plots is not right ( a current bug), 
+    drag the mouse from the lower right to the upper right. This should trigger an autoscale
+iv) in the Expose panel, set an exposure time, number of exposures, and press expose. The signal to noise will be displayed. 
